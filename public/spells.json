@@ -1,0 +1,4790 @@
+[
+  {
+    "champion": "Aatrox",
+    "spell_name": "The Darkin Blade",
+    "spell_id": "AatroxQ",
+    "cooldown": "[14, 12, 10, 8, 6]",
+    "cooldown_text": "14/12/10/8/6"
+  },
+  {
+    "champion": "Aatrox",
+    "spell_name": "Infernal Chains",
+    "spell_id": "AatroxW",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Aatrox",
+    "spell_name": "Umbral Dash",
+    "spell_id": "AatroxE",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Aatrox",
+    "spell_name": "World Ender",
+    "spell_id": "AatroxR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Ahri",
+    "spell_name": "Orb of Deception",
+    "spell_id": "AhriQ",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Ahri",
+    "spell_name": "Fox-Fire",
+    "spell_id": "AhriW",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Ahri",
+    "spell_name": "Charm",
+    "spell_id": "AhriE",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Ahri",
+    "spell_name": "Spirit Rush",
+    "spell_id": "AhriR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Akali",
+    "spell_name": "Five Point Strike",
+    "spell_id": "AkaliQ",
+    "cooldown": "[1.5, 1.5, 1.5, 1.5, 1.5]",
+    "cooldown_text": "1.5"
+  },
+  {
+    "champion": "Akali",
+    "spell_name": "Twilight Shroud",
+    "spell_id": "AkaliW",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Akali",
+    "spell_name": "Shuriken Flip",
+    "spell_id": "AkaliE",
+    "cooldown": "[16, 14.5, 13, 11.5, 10]",
+    "cooldown_text": "16/14.5/13/11.5/10"
+  },
+  {
+    "champion": "Akali",
+    "spell_name": "Perfect Execution",
+    "spell_id": "AkaliR",
+    "cooldown": "[120, 90, 60]",
+    "cooldown_text": "120/90/60"
+  },
+  {
+    "champion": "Akshan",
+    "spell_name": "Avengerang",
+    "spell_id": "AkshanQ",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Akshan",
+    "spell_name": "Going Rogue",
+    "spell_id": "AkshanW",
+    "cooldown": "[18, 14, 10, 6, 2]",
+    "cooldown_text": "18/14/10/6/2"
+  },
+  {
+    "champion": "Akshan",
+    "spell_name": "Heroic Swing",
+    "spell_id": "AkshanE",
+    "cooldown": "[18, 16.5, 15, 13.5, 12]",
+    "cooldown_text": "18/16.5/15/13.5/12"
+  },
+  {
+    "champion": "Akshan",
+    "spell_name": "Comeuppance",
+    "spell_id": "AkshanR",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Alistar",
+    "spell_name": "Pulverize",
+    "spell_id": "Pulverize",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Alistar",
+    "spell_name": "Headbutt",
+    "spell_id": "Headbutt",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Alistar",
+    "spell_name": "Trample",
+    "spell_id": "AlistarE",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Alistar",
+    "spell_name": "Unbreakable Will",
+    "spell_id": "FerociousHowl",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Ambessa",
+    "spell_name": "Cunning Sweep / Sundering Slam",
+    "spell_id": "AmbessaQ",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Ambessa",
+    "spell_name": "Repudiation",
+    "spell_id": "AmbessaW",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "Ambessa",
+    "spell_name": "Lacerate",
+    "spell_id": "AmbessaE",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Ambessa",
+    "spell_name": "Public Execution",
+    "spell_id": "AmbessaR",
+    "cooldown": "[130, 115, 100]",
+    "cooldown_text": "130/115/100"
+  },
+  {
+    "champion": "Amumu",
+    "spell_name": "Bandage Toss",
+    "spell_id": "BandageToss",
+    "cooldown": "[3, 3, 3, 3, 3]",
+    "cooldown_text": "3"
+  },
+  {
+    "champion": "Amumu",
+    "spell_name": "Despair",
+    "spell_id": "AuraofDespair",
+    "cooldown": "[1, 1, 1, 1, 1]",
+    "cooldown_text": "1"
+  },
+  {
+    "champion": "Amumu",
+    "spell_name": "Tantrum",
+    "spell_id": "Tantrum",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Amumu",
+    "spell_name": "Curse of the Sad Mummy",
+    "spell_id": "CurseoftheSadMummy",
+    "cooldown": "[150, 125, 100]",
+    "cooldown_text": "150/125/100"
+  },
+  {
+    "champion": "Anivia",
+    "spell_name": "Flash Frost",
+    "spell_id": "FlashFrost",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Anivia",
+    "spell_name": "Crystallize",
+    "spell_id": "Crystallize",
+    "cooldown": "[17, 17, 17, 17, 17]",
+    "cooldown_text": "17"
+  },
+  {
+    "champion": "Anivia",
+    "spell_name": "Frostbite",
+    "spell_id": "Frostbite",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Anivia",
+    "spell_name": "Glacial Storm",
+    "spell_id": "GlacialStorm",
+    "cooldown": "[4, 3, 2]",
+    "cooldown_text": "4/3/2"
+  },
+  {
+    "champion": "Annie",
+    "spell_name": "Disintegrate",
+    "spell_id": "AnnieQ",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Annie",
+    "spell_name": "Incinerate",
+    "spell_id": "AnnieW",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Annie",
+    "spell_name": "Molten Shield",
+    "spell_id": "AnnieE",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Annie",
+    "spell_name": "Summon: Tibbers",
+    "spell_id": "AnnieR",
+    "cooldown": "[130, 115, 100]",
+    "cooldown_text": "130/115/100"
+  },
+  {
+    "champion": "Aphelios",
+    "spell_name": "Weapon Abilites",
+    "spell_id": "ApheliosQ_ClientTooltipWrapper",
+    "cooldown": "[9, 9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "Aphelios",
+    "spell_name": "Phase",
+    "spell_id": "ApheliosW",
+    "cooldown": "[0.8, 0.8, 0.8, 0.8, 0.8, 0.8]",
+    "cooldown_text": "0.8"
+  },
+  {
+    "champion": "Aphelios",
+    "spell_name": "Weapon Queue System",
+    "spell_id": "ApheliosE_ClientTooltipWrapper",
+    "cooldown": "[0, 0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Aphelios",
+    "spell_name": "Moonlight Vigil",
+    "spell_id": "ApheliosR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Ashe",
+    "spell_name": "Ranger's Focus",
+    "spell_id": "AsheQ",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Ashe",
+    "spell_name": "Volley",
+    "spell_id": "Volley",
+    "cooldown": "[18, 14.5, 11, 7.5, 4]",
+    "cooldown_text": "18/14.5/11/7.5/4"
+  },
+  {
+    "champion": "Ashe",
+    "spell_name": "Hawkshot",
+    "spell_id": "AsheSpiritOfTheHawk",
+    "cooldown": "[5, 5, 5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Ashe",
+    "spell_name": "Enchanted Crystal Arrow",
+    "spell_id": "EnchantedCrystalArrow",
+    "cooldown": "[100, 80, 60]",
+    "cooldown_text": "100/80/60"
+  },
+  {
+    "champion": "AurelionSol",
+    "spell_name": "Breath of Light",
+    "spell_id": "AurelionSolQ",
+    "cooldown": "[3, 3, 3, 3, 3]",
+    "cooldown_text": "3"
+  },
+  {
+    "champion": "AurelionSol",
+    "spell_name": "Astral Flight",
+    "spell_id": "AurelionSolW",
+    "cooldown": "[22, 20.5, 19, 17.5, 16]",
+    "cooldown_text": "22/20.5/19/17.5/16"
+  },
+  {
+    "champion": "AurelionSol",
+    "spell_name": "Singularity",
+    "spell_id": "AurelionSolE",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "AurelionSol",
+    "spell_name": "Falling Star / The Skies Descend",
+    "spell_id": "AurelionSolR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Aurora",
+    "spell_name": "Twofold Hex",
+    "spell_id": "AuroraQ",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Aurora",
+    "spell_name": "Across the Veil",
+    "spell_id": "AuroraW",
+    "cooldown": "[22, 21, 20, 19, 18]",
+    "cooldown_text": "22/21/20/19/18"
+  },
+  {
+    "champion": "Aurora",
+    "spell_name": "The Weirding",
+    "spell_id": "AuroraE",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Aurora",
+    "spell_name": "Between Worlds",
+    "spell_id": "AuroraR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Azir",
+    "spell_name": "Conquering Sands",
+    "spell_id": "AzirQWrapper",
+    "cooldown": "[14, 12, 10, 8, 6]",
+    "cooldown_text": "14/12/10/8/6"
+  },
+  {
+    "champion": "Azir",
+    "spell_name": "Arise!",
+    "spell_id": "AzirW",
+    "cooldown": "[1.5, 1.5, 1.5, 1.5, 1.5]",
+    "cooldown_text": "1.5"
+  },
+  {
+    "champion": "Azir",
+    "spell_name": "Shifting Sands",
+    "spell_id": "AzirEWrapper",
+    "cooldown": "[22, 20.5, 19, 17.5, 16]",
+    "cooldown_text": "22/20.5/19/17.5/16"
+  },
+  {
+    "champion": "Azir",
+    "spell_name": "Emperor's Divide",
+    "spell_id": "AzirR",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "Bard",
+    "spell_name": "Cosmic Binding",
+    "spell_id": "BardQ",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Bard",
+    "spell_name": "Caretaker's Shrine",
+    "spell_id": "BardW",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Bard",
+    "spell_name": "Magical Journey",
+    "spell_id": "BardE",
+    "cooldown": "[22, 20.5, 19, 17.5, 16]",
+    "cooldown_text": "22/20.5/19/17.5/16"
+  },
+  {
+    "champion": "Bard",
+    "spell_name": "Tempered Fate",
+    "spell_id": "BardR",
+    "cooldown": "[110, 95, 80]",
+    "cooldown_text": "110/95/80"
+  },
+  {
+    "champion": "Belveth",
+    "spell_name": "Void Surge",
+    "spell_id": "BelvethQ",
+    "cooldown": "[1, 1, 1, 1, 1]",
+    "cooldown_text": "1"
+  },
+  {
+    "champion": "Belveth",
+    "spell_name": "Above and Below",
+    "spell_id": "BelvethW",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Belveth",
+    "spell_name": "Royal Maelstrom",
+    "spell_id": "BelvethE",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Belveth",
+    "spell_name": "Endless Banquet",
+    "spell_id": "BelvethR",
+    "cooldown": "[1, 1, 1]",
+    "cooldown_text": "1"
+  },
+  {
+    "champion": "Blitzcrank",
+    "spell_name": "Rocket Grab",
+    "spell_id": "RocketGrab",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Blitzcrank",
+    "spell_name": "Overdrive",
+    "spell_id": "Overdrive",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Blitzcrank",
+    "spell_name": "Power Fist",
+    "spell_id": "PowerFist",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "Blitzcrank",
+    "spell_name": "Static Field",
+    "spell_id": "StaticField",
+    "cooldown": "[60, 40, 20]",
+    "cooldown_text": "60/40/20"
+  },
+  {
+    "champion": "Brand",
+    "spell_name": "Sear",
+    "spell_id": "BrandQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Brand",
+    "spell_name": "Pillar of Flame",
+    "spell_id": "BrandW",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Brand",
+    "spell_name": "Conflagration",
+    "spell_id": "BrandE",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Brand",
+    "spell_name": "Pyroclasm",
+    "spell_id": "BrandR",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "Braum",
+    "spell_name": "Winter's Bite",
+    "spell_id": "BraumQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Braum",
+    "spell_name": "Stand Behind Me",
+    "spell_id": "BraumW",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Braum",
+    "spell_name": "Unbreakable",
+    "spell_id": "BraumE",
+    "cooldown": "[16, 14, 12, 10, 8]",
+    "cooldown_text": "16/14/12/10/8"
+  },
+  {
+    "champion": "Braum",
+    "spell_name": "Glacial Fissure",
+    "spell_id": "BraumRWrapper",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Briar",
+    "spell_name": "Head Rush",
+    "spell_id": "BriarQ",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Briar",
+    "spell_name": "Blood Frenzy / Snack Attack",
+    "spell_id": "BriarW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Briar",
+    "spell_name": "Chilling Scream",
+    "spell_id": "BriarE",
+    "cooldown": "[16, 16, 16, 16, 16]",
+    "cooldown_text": "16"
+  },
+  {
+    "champion": "Briar",
+    "spell_name": "Certain Death",
+    "spell_id": "BriarR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Caitlyn",
+    "spell_name": "Piltover Peacemaker",
+    "spell_id": "CaitlynQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Caitlyn",
+    "spell_name": "Yordle Snap Trap",
+    "spell_id": "CaitlynW",
+    "cooldown": "[0.5, 0.5, 0.5, 0.5, 0.5]",
+    "cooldown_text": "0.5"
+  },
+  {
+    "champion": "Caitlyn",
+    "spell_name": "90 Caliber Net",
+    "spell_id": "CaitlynE",
+    "cooldown": "[16, 14, 12, 10, 8]",
+    "cooldown_text": "16/14/12/10/8"
+  },
+  {
+    "champion": "Caitlyn",
+    "spell_name": "Ace in the Hole",
+    "spell_id": "CaitlynR",
+    "cooldown": "[90, 90, 90]",
+    "cooldown_text": "90"
+  },
+  {
+    "champion": "Camille",
+    "spell_name": "Precision Protocol",
+    "spell_id": "CamilleQ",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Camille",
+    "spell_name": "Tactical Sweep",
+    "spell_id": "CamilleW",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Camille",
+    "spell_name": "Hookshot",
+    "spell_id": "CamilleE",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Camille",
+    "spell_name": "The Hextech Ultimatum",
+    "spell_id": "CamilleR",
+    "cooldown": "[140, 115, 90]",
+    "cooldown_text": "140/115/90"
+  },
+  {
+    "champion": "Cassiopeia",
+    "spell_name": "Noxious Blast",
+    "spell_id": "CassiopeiaQ",
+    "cooldown": "[3.5, 3.5, 3.5, 3.5, 3.5]",
+    "cooldown_text": "3.5"
+  },
+  {
+    "champion": "Cassiopeia",
+    "spell_name": "Miasma",
+    "spell_id": "CassiopeiaW",
+    "cooldown": "[24, 22, 20, 18, 16]",
+    "cooldown_text": "24/22/20/18/16"
+  },
+  {
+    "champion": "Cassiopeia",
+    "spell_name": "Twin Fang",
+    "spell_id": "CassiopeiaE",
+    "cooldown": "[0.75, 0.75, 0.75, 0.75, 0.75]",
+    "cooldown_text": "0.75"
+  },
+  {
+    "champion": "Cassiopeia",
+    "spell_name": "Petrifying Gaze",
+    "spell_id": "CassiopeiaR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Chogath",
+    "spell_name": "Rupture",
+    "spell_id": "Rupture",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Chogath",
+    "spell_name": "Feral Scream",
+    "spell_id": "FeralScream",
+    "cooldown": "[11, 10.5, 10, 9.5, 9]",
+    "cooldown_text": "11/10.5/10/9.5/9"
+  },
+  {
+    "champion": "Chogath",
+    "spell_name": "Vorpal Spikes",
+    "spell_id": "VorpalSpikes",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Chogath",
+    "spell_name": "Feast",
+    "spell_id": "Feast",
+    "cooldown": "[80, 70, 60]",
+    "cooldown_text": "80/70/60"
+  },
+  {
+    "champion": "Corki",
+    "spell_name": "Phosphorus Bomb",
+    "spell_id": "PhosphorusBomb",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Corki",
+    "spell_name": "Valkyrie",
+    "spell_id": "CarpetBomb",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Corki",
+    "spell_name": "Gatling Gun",
+    "spell_id": "GGun",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Corki",
+    "spell_name": "Missile Barrage",
+    "spell_id": "MissileBarrage",
+    "cooldown": "[2, 2, 2]",
+    "cooldown_text": "2"
+  },
+  {
+    "champion": "Darius",
+    "spell_name": "Decimate",
+    "spell_id": "DariusCleave",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Darius",
+    "spell_name": "Crippling Strike",
+    "spell_id": "DariusNoxianTacticsONH",
+    "cooldown": "[5, 5, 5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Darius",
+    "spell_name": "Apprehend",
+    "spell_id": "DariusAxeGrabCone",
+    "cooldown": "[26, 23.5, 21, 18.5, 16]",
+    "cooldown_text": "26/23.5/21/18.5/16"
+  },
+  {
+    "champion": "Darius",
+    "spell_name": "Noxian Guillotine",
+    "spell_id": "DariusExecute",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Diana",
+    "spell_name": "Crescent Strike",
+    "spell_id": "DianaQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Diana",
+    "spell_name": "Pale Cascade",
+    "spell_id": "DianaOrbs",
+    "cooldown": "[15, 13.5, 12, 10.5, 9]",
+    "cooldown_text": "15/13.5/12/10.5/9"
+  },
+  {
+    "champion": "Diana",
+    "spell_name": "Lunar Rush",
+    "spell_id": "DianaTeleport",
+    "cooldown": "[22, 20, 18, 16, 14]",
+    "cooldown_text": "22/20/18/16/14"
+  },
+  {
+    "champion": "Diana",
+    "spell_name": "Moonfall",
+    "spell_id": "DianaR",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "Draven",
+    "spell_name": "Spinning Axe",
+    "spell_id": "DravenSpinning",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Draven",
+    "spell_name": "Blood Rush",
+    "spell_id": "DravenFury",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Draven",
+    "spell_name": "Stand Aside",
+    "spell_id": "DravenDoubleShot",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "Draven",
+    "spell_name": "Whirling Death",
+    "spell_id": "DravenRCast",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "DrMundo",
+    "spell_name": "Infected Bonesaw",
+    "spell_id": "DrMundoQ",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "DrMundo",
+    "spell_name": "Heart Zapper",
+    "spell_id": "DrMundoW",
+    "cooldown": "[17, 16.5, 16, 15.5, 15]",
+    "cooldown_text": "17/16.5/16/15.5/15"
+  },
+  {
+    "champion": "DrMundo",
+    "spell_name": "Blunt Force Trauma",
+    "spell_id": "DrMundoE",
+    "cooldown": "[9, 8.25, 7.5, 6.75, 6]",
+    "cooldown_text": "9/8.25/7.5/6.75/6"
+  },
+  {
+    "champion": "DrMundo",
+    "spell_name": "Maximum Dosage",
+    "spell_id": "DrMundoR",
+    "cooldown": "[120, 120, 120]",
+    "cooldown_text": "120"
+  },
+  {
+    "champion": "Ekko",
+    "spell_name": "Timewinder",
+    "spell_id": "EkkoQ",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Ekko",
+    "spell_name": "Parallel Convergence",
+    "spell_id": "EkkoW",
+    "cooldown": "[22, 20, 18, 16, 14]",
+    "cooldown_text": "22/20/18/16/14"
+  },
+  {
+    "champion": "Ekko",
+    "spell_name": "Phase Dive",
+    "spell_id": "EkkoE",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Ekko",
+    "spell_name": "Chronobreak",
+    "spell_id": "EkkoR",
+    "cooldown": "[110, 80, 50]",
+    "cooldown_text": "110/80/50"
+  },
+  {
+    "champion": "Elise",
+    "spell_name": "Neurotoxin / Venomous Bite",
+    "spell_id": "EliseHumanQ",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Elise",
+    "spell_name": "Volatile Spiderling / Skittering Frenzy",
+    "spell_id": "EliseHumanW",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Elise",
+    "spell_name": "Cocoon / Rappel",
+    "spell_id": "EliseHumanE",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Elise",
+    "spell_name": "Spider Form",
+    "spell_id": "EliseR",
+    "cooldown": "[3, 3, 3, 3]",
+    "cooldown_text": "3"
+  },
+  {
+    "champion": "Evelynn",
+    "spell_name": "Hate Spike",
+    "spell_id": "EvelynnQ",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Evelynn",
+    "spell_name": "Allure",
+    "spell_id": "EvelynnW",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Evelynn",
+    "spell_name": "Whiplash",
+    "spell_id": "EvelynnE",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Evelynn",
+    "spell_name": "Last Caress",
+    "spell_id": "EvelynnR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Ezreal",
+    "spell_name": "Mystic Shot",
+    "spell_id": "EzrealQ",
+    "cooldown": "[5.5, 5.25, 5, 4.75, 4.5]",
+    "cooldown_text": "5.5/5.25/5/4.75/4.5"
+  },
+  {
+    "champion": "Ezreal",
+    "spell_name": "Essence Flux",
+    "spell_id": "EzrealW",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Ezreal",
+    "spell_name": "Arcane Shift",
+    "spell_id": "EzrealE",
+    "cooldown": "[26, 23, 20, 17, 14]",
+    "cooldown_text": "26/23/20/17/14"
+  },
+  {
+    "champion": "Ezreal",
+    "spell_name": "Trueshot Barrage",
+    "spell_id": "EzrealR",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "spell_name": "Terrify",
+    "spell_id": "FiddleSticksQ",
+    "cooldown": "[15, 14.5, 14, 13.5, 13]",
+    "cooldown_text": "15/14.5/14/13.5/13"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "spell_name": "Bountiful Harvest",
+    "spell_id": "FiddleSticksW",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "spell_name": "Reap",
+    "spell_id": "FiddleSticksE",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "spell_name": "Crowstorm",
+    "spell_id": "FiddleSticksR",
+    "cooldown": "[140, 110, 80]",
+    "cooldown_text": "140/110/80"
+  },
+  {
+    "champion": "Fiora",
+    "spell_name": "Lunge",
+    "spell_id": "FioraQ",
+    "cooldown": "[13, 11.25, 9.5, 7.75, 6]",
+    "cooldown_text": "13/11.25/9.5/7.75/6"
+  },
+  {
+    "champion": "Fiora",
+    "spell_name": "Riposte",
+    "spell_id": "FioraW",
+    "cooldown": "[24, 22, 20, 18, 16]",
+    "cooldown_text": "24/22/20/18/16"
+  },
+  {
+    "champion": "Fiora",
+    "spell_name": "Bladework",
+    "spell_id": "FioraE",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Fiora",
+    "spell_name": "Grand Challenge",
+    "spell_id": "FioraR",
+    "cooldown": "[110, 90, 70]",
+    "cooldown_text": "110/90/70"
+  },
+  {
+    "champion": "Fizz",
+    "spell_name": "Urchin Strike",
+    "spell_id": "FizzQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Fizz",
+    "spell_name": "Seastone Trident",
+    "spell_id": "FizzW",
+    "cooldown": "[7, 6, 5, 4, 3]",
+    "cooldown_text": "7/6/5/4/3"
+  },
+  {
+    "champion": "Fizz",
+    "spell_name": "Playful / Trickster",
+    "spell_id": "FizzE",
+    "cooldown": "[16, 14, 12, 10, 8]",
+    "cooldown_text": "16/14/12/10/8"
+  },
+  {
+    "champion": "Fizz",
+    "spell_name": "Chum the Waters",
+    "spell_id": "FizzR",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Galio",
+    "spell_name": "Winds of War",
+    "spell_id": "GalioQ",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Galio",
+    "spell_name": "Shield of Durand",
+    "spell_id": "GalioW",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "Galio",
+    "spell_name": "Justice Punch",
+    "spell_id": "GalioE",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Galio",
+    "spell_name": "Hero's Entrance",
+    "spell_id": "GalioR",
+    "cooldown": "[180, 160, 140]",
+    "cooldown_text": "180/160/140"
+  },
+  {
+    "champion": "Gangplank",
+    "spell_name": "Parrrley",
+    "spell_id": "GangplankQWrapper",
+    "cooldown": "[4.5, 4.5, 4.5, 4.5, 4.5]",
+    "cooldown_text": "4.5"
+  },
+  {
+    "champion": "Gangplank",
+    "spell_name": "Remove Scurvy",
+    "spell_id": "GangplankW",
+    "cooldown": "[22, 20, 18, 16, 14]",
+    "cooldown_text": "22/20/18/16/14"
+  },
+  {
+    "champion": "Gangplank",
+    "spell_name": "Powder Keg",
+    "spell_id": "GangplankE",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Gangplank",
+    "spell_name": "Cannon Barrage",
+    "spell_id": "GangplankR",
+    "cooldown": "[160, 140, 120]",
+    "cooldown_text": "160/140/120"
+  },
+  {
+    "champion": "Garen",
+    "spell_name": "Decisive Strike",
+    "spell_id": "GarenQ",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Garen",
+    "spell_name": "Courage",
+    "spell_id": "GarenW",
+    "cooldown": "[22, 19.5, 17, 14.5, 12]",
+    "cooldown_text": "22/19.5/17/14.5/12"
+  },
+  {
+    "champion": "Garen",
+    "spell_name": "Judgment",
+    "spell_id": "GarenE",
+    "cooldown": "[9, 8.25, 7.5, 6.75, 6]",
+    "cooldown_text": "9/8.25/7.5/6.75/6"
+  },
+  {
+    "champion": "Garen",
+    "spell_name": "Demacian Justice",
+    "spell_id": "GarenR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Gnar",
+    "spell_name": "Boomerang Throw / Boulder Toss",
+    "spell_id": "GnarQ",
+    "cooldown": "[16, 14.5, 13, 11.5, 10]",
+    "cooldown_text": "16/14.5/13/11.5/10"
+  },
+  {
+    "champion": "Gnar",
+    "spell_name": "Hyper / Wallop",
+    "spell_id": "GnarW",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Gnar",
+    "spell_name": "Hop / Crunch",
+    "spell_id": "GnarE",
+    "cooldown": "[22, 19.5, 17, 14.5, 12]",
+    "cooldown_text": "22/19.5/17/14.5/12"
+  },
+  {
+    "champion": "Gnar",
+    "spell_name": "GNAR!",
+    "spell_id": "GnarR",
+    "cooldown": "[90, 60, 30]",
+    "cooldown_text": "90/60/30"
+  },
+  {
+    "champion": "Gragas",
+    "spell_name": "Barrel Roll",
+    "spell_id": "GragasQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Gragas",
+    "spell_name": "Drunken Rage",
+    "spell_id": "GragasW",
+    "cooldown": "[5, 5, 5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Gragas",
+    "spell_name": "Body Slam",
+    "spell_id": "GragasE",
+    "cooldown": "[14, 13.5, 13, 12.5, 12]",
+    "cooldown_text": "14/13.5/13/12.5/12"
+  },
+  {
+    "champion": "Gragas",
+    "spell_name": "Explosive Cask",
+    "spell_id": "GragasR",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Graves",
+    "spell_name": "End of the Line",
+    "spell_id": "GravesQLineSpell",
+    "cooldown": "[13, 11.25, 9.5, 7.75, 6]",
+    "cooldown_text": "13/11.25/9.5/7.75/6"
+  },
+  {
+    "champion": "Graves",
+    "spell_name": "Smoke Screen",
+    "spell_id": "GravesSmokeGrenade",
+    "cooldown": "[26, 24, 22, 20, 18]",
+    "cooldown_text": "26/24/22/20/18"
+  },
+  {
+    "champion": "Graves",
+    "spell_name": "Quickdraw",
+    "spell_id": "GravesMove",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Graves",
+    "spell_name": "Collateral Damage",
+    "spell_id": "GravesChargeShot",
+    "cooldown": "[100, 80, 60]",
+    "cooldown_text": "100/80/60"
+  },
+  {
+    "champion": "Gwen",
+    "spell_name": "Snip Snip!",
+    "spell_id": "GwenQ",
+    "cooldown": "[6.5, 5.75, 5, 4.25, 3.5]",
+    "cooldown_text": "6.5/5.75/5/4.25/3.5"
+  },
+  {
+    "champion": "Gwen",
+    "spell_name": "Hallowed Mist",
+    "spell_id": "GwenW",
+    "cooldown": "[22, 21, 20, 19, 18]",
+    "cooldown_text": "22/21/20/19/18"
+  },
+  {
+    "champion": "Gwen",
+    "spell_name": "Skip 'n Slash",
+    "spell_id": "GwenE",
+    "cooldown": "[13, 12.5, 12, 11.5, 11]",
+    "cooldown_text": "13/12.5/12/11.5/11"
+  },
+  {
+    "champion": "Gwen",
+    "spell_name": "Needlework",
+    "spell_id": "GwenR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Hecarim",
+    "spell_name": "Rampage",
+    "spell_id": "HecarimRapidSlash",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Hecarim",
+    "spell_name": "Spirit of Dread",
+    "spell_id": "HecarimW",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Hecarim",
+    "spell_name": "Devastating Charge",
+    "spell_id": "HecarimRamp",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Hecarim",
+    "spell_name": "Onslaught of Shadows",
+    "spell_id": "HecarimUlt",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Heimerdinger",
+    "spell_name": "H-28 G Evolution Turret",
+    "spell_id": "HeimerdingerQ",
+    "cooldown": "[1, 1, 1, 1, 1]",
+    "cooldown_text": "1"
+  },
+  {
+    "champion": "Heimerdinger",
+    "spell_name": "Hextech Micro-Rockets",
+    "spell_id": "HeimerdingerW",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Heimerdinger",
+    "spell_name": "CH-2 Electron Storm Grenade",
+    "spell_id": "HeimerdingerE",
+    "cooldown": "[11, 11, 11, 11, 11]",
+    "cooldown_text": "11"
+  },
+  {
+    "champion": "Heimerdinger",
+    "spell_name": "UPGRADE!!!",
+    "spell_id": "HeimerdingerR",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Hwei",
+    "spell_name": "Subject: Disaster",
+    "spell_id": "HweiQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Hwei",
+    "spell_name": "Subject: Serenity",
+    "spell_id": "HweiW",
+    "cooldown": "[18, 17.5, 17, 16.5, 16]",
+    "cooldown_text": "18/17.5/17/16.5/16"
+  },
+  {
+    "champion": "Hwei",
+    "spell_name": "Subject: Torment",
+    "spell_id": "HweiE",
+    "cooldown": "[13, 12.5, 12, 11.5, 11]",
+    "cooldown_text": "13/12.5/12/11.5/11"
+  },
+  {
+    "champion": "Hwei",
+    "spell_name": "Spiraling Despair",
+    "spell_id": "HweiR",
+    "cooldown": "[140, 115, 80]",
+    "cooldown_text": "140/115/80"
+  },
+  {
+    "champion": "Illaoi",
+    "spell_name": "Tentacle Smash",
+    "spell_id": "IllaoiQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Illaoi",
+    "spell_name": "Harsh Lesson",
+    "spell_id": "IllaoiW",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Illaoi",
+    "spell_name": "Test of Spirit",
+    "spell_id": "IllaoiE",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Illaoi",
+    "spell_name": "Leap of Faith",
+    "spell_id": "IllaoiR",
+    "cooldown": "[120, 95, 70]",
+    "cooldown_text": "120/95/70"
+  },
+  {
+    "champion": "Irelia",
+    "spell_name": "Bladesurge",
+    "spell_id": "IreliaQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Irelia",
+    "spell_name": "Defiant Dance",
+    "spell_id": "IreliaW",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Irelia",
+    "spell_name": "Flawless Duet",
+    "spell_id": "IreliaE",
+    "cooldown": "[16, 14.5, 13, 11.5, 10]",
+    "cooldown_text": "16/14.5/13/11.5/10"
+  },
+  {
+    "champion": "Irelia",
+    "spell_name": "Vanguard's Edge",
+    "spell_id": "IreliaR",
+    "cooldown": "[125, 105, 85]",
+    "cooldown_text": "125/105/85"
+  },
+  {
+    "champion": "Ivern",
+    "spell_name": "Rootcaller",
+    "spell_id": "IvernQ",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Ivern",
+    "spell_name": "Brushmaker",
+    "spell_id": "IvernW",
+    "cooldown": "[0.5, 0.5, 0.5, 0.5, 0.5]",
+    "cooldown_text": "0.5"
+  },
+  {
+    "champion": "Ivern",
+    "spell_name": "Triggerseed",
+    "spell_id": "IvernE",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Ivern",
+    "spell_name": "Daisy!",
+    "spell_id": "IvernR",
+    "cooldown": "[140, 130, 120]",
+    "cooldown_text": "140/130/120"
+  },
+  {
+    "champion": "Janna",
+    "spell_name": "Howling Gale",
+    "spell_id": "HowlingGale",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Janna",
+    "spell_name": "Zephyr",
+    "spell_id": "SowTheWind",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Janna",
+    "spell_name": "Eye Of The Storm",
+    "spell_id": "EyeOfTheStorm",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Janna",
+    "spell_name": "Monsoon",
+    "spell_id": "ReapTheWhirlwind",
+    "cooldown": "[130, 115, 100]",
+    "cooldown_text": "130/115/100"
+  },
+  {
+    "champion": "JarvanIV",
+    "spell_name": "Dragon Strike",
+    "spell_id": "JarvanIVDragonStrike",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "JarvanIV",
+    "spell_name": "Golden Aegis",
+    "spell_id": "JarvanIVGoldenAegis",
+    "cooldown": "[9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "JarvanIV",
+    "spell_name": "Demacian Standard",
+    "spell_id": "JarvanIVDemacianStandard",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "JarvanIV",
+    "spell_name": "Cataclysm",
+    "spell_id": "JarvanIVCataclysm",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "Jax",
+    "spell_name": "Leap Strike",
+    "spell_id": "JaxQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Jax",
+    "spell_name": "Empower",
+    "spell_id": "JaxW",
+    "cooldown": "[7, 6, 5, 4, 3]",
+    "cooldown_text": "7/6/5/4/3"
+  },
+  {
+    "champion": "Jax",
+    "spell_name": "Counter Strike",
+    "spell_id": "JaxE",
+    "cooldown": "[17, 15, 13, 11, 9]",
+    "cooldown_text": "17/15/13/11/9"
+  },
+  {
+    "champion": "Jax",
+    "spell_name": "Grandmaster-at-Arms",
+    "spell_id": "JaxR",
+    "cooldown": "[110, 100, 90]",
+    "cooldown_text": "110/100/90"
+  },
+  {
+    "champion": "Jayce",
+    "spell_name": "To the Skies! / Shock Blast",
+    "spell_id": "JayceToTheSkies",
+    "cooldown": "[16, 14, 12, 10, 8, 6]",
+    "cooldown_text": "16/14/12/10/8/6"
+  },
+  {
+    "champion": "Jayce",
+    "spell_name": "Lightning Field / Hyper Charge",
+    "spell_id": "JayceStaticField",
+    "cooldown": "[10, 10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Jayce",
+    "spell_name": "Thundering Blow / Acceleration Gate",
+    "spell_id": "JayceThunderingBlow",
+    "cooldown": "[20, 18, 16, 14, 12, 10]",
+    "cooldown_text": "20/18/16/14/12/10"
+  },
+  {
+    "champion": "Jayce",
+    "spell_name": "Mercury Cannon / Mercury Hammer",
+    "spell_id": "JayceStanceHtG",
+    "cooldown": "[6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Jhin",
+    "spell_name": "Dancing Grenade",
+    "spell_id": "JhinQ",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "Jhin",
+    "spell_name": "Deadly Flourish",
+    "spell_id": "JhinW",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Jhin",
+    "spell_name": "Captive Audience",
+    "spell_id": "JhinE",
+    "cooldown": "[2, 2, 2, 2, 2]",
+    "cooldown_text": "2"
+  },
+  {
+    "champion": "Jhin",
+    "spell_name": "Curtain Call",
+    "spell_id": "JhinR",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "Jinx",
+    "spell_name": "Switcheroo!",
+    "spell_id": "JinxQ",
+    "cooldown": "[0.9, 0.9, 0.9, 0.9, 0.9]",
+    "cooldown_text": "0.9"
+  },
+  {
+    "champion": "Jinx",
+    "spell_name": "Zap!",
+    "spell_id": "JinxW",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Jinx",
+    "spell_name": "Flame Chompers!",
+    "spell_id": "JinxE",
+    "cooldown": "[24, 20.5, 17, 13.5, 10]",
+    "cooldown_text": "24/20.5/17/13.5/10"
+  },
+  {
+    "champion": "Jinx",
+    "spell_name": "Super Mega Death Rocket!",
+    "spell_id": "JinxR",
+    "cooldown": "[85, 65, 45]",
+    "cooldown_text": "85/65/45"
+  },
+  {
+    "champion": "Kaisa",
+    "spell_name": "Icathian Rain",
+    "spell_id": "KaisaQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Kaisa",
+    "spell_name": "Void Seeker",
+    "spell_id": "KaisaW",
+    "cooldown": "[22, 20, 18, 16, 14]",
+    "cooldown_text": "22/20/18/16/14"
+  },
+  {
+    "champion": "Kaisa",
+    "spell_name": "Supercharge",
+    "spell_id": "KaisaE",
+    "cooldown": "[16, 14.5, 13, 11.5, 10]",
+    "cooldown_text": "16/14.5/13/11.5/10"
+  },
+  {
+    "champion": "Kaisa",
+    "spell_name": "Killer Instinct",
+    "spell_id": "KaisaR",
+    "cooldown": "[120, 90, 60]",
+    "cooldown_text": "120/90/60"
+  },
+  {
+    "champion": "Kalista",
+    "spell_name": "Pierce",
+    "spell_id": "KalistaMysticShot",
+    "cooldown": "[9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "Kalista",
+    "spell_name": "Sentinel",
+    "spell_id": "KalistaW",
+    "cooldown": "[30, 30, 30, 30, 30]",
+    "cooldown_text": "30"
+  },
+  {
+    "champion": "Kalista",
+    "spell_name": "Rend",
+    "spell_id": "KalistaExpungeWrapper",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Kalista",
+    "spell_name": "Fate's Call",
+    "spell_id": "KalistaRx",
+    "cooldown": "[160, 140, 120]",
+    "cooldown_text": "160/140/120"
+  },
+  {
+    "champion": "Karma",
+    "spell_name": "Inner Flame",
+    "spell_id": "KarmaQ",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Karma",
+    "spell_name": "Focused Resolve",
+    "spell_id": "KarmaSpiritBind",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Karma",
+    "spell_name": "Inspire",
+    "spell_id": "KarmaSolKimShield",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Karma",
+    "spell_name": "Mantra",
+    "spell_id": "KarmaMantra",
+    "cooldown": "[40, 38, 36, 34]",
+    "cooldown_text": "40/38/36/34"
+  },
+  {
+    "champion": "Karthus",
+    "spell_name": "Lay Waste",
+    "spell_id": "KarthusLayWasteA1",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Karthus",
+    "spell_name": "Wall of Pain",
+    "spell_id": "KarthusWallOfPain",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Karthus",
+    "spell_name": "Defile",
+    "spell_id": "KarthusDefile",
+    "cooldown": "[0.5, 0.5, 0.5, 0.5, 0.5]",
+    "cooldown_text": "0.5"
+  },
+  {
+    "champion": "Karthus",
+    "spell_name": "Requiem",
+    "spell_id": "KarthusFallenOne",
+    "cooldown": "[200, 180, 160]",
+    "cooldown_text": "200/180/160"
+  },
+  {
+    "champion": "Kassadin",
+    "spell_name": "Null Sphere",
+    "spell_id": "NullLance",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Kassadin",
+    "spell_name": "Nether Blade",
+    "spell_id": "NetherBlade",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Kassadin",
+    "spell_name": "Force Pulse",
+    "spell_id": "ForcePulse",
+    "cooldown": "[21, 20, 19, 18, 17]",
+    "cooldown_text": "21/20/19/18/17"
+  },
+  {
+    "champion": "Kassadin",
+    "spell_name": "Riftwalk",
+    "spell_id": "RiftWalk",
+    "cooldown": "[5, 3.5, 2]",
+    "cooldown_text": "5/3.5/2"
+  },
+  {
+    "champion": "Katarina",
+    "spell_name": "Bouncing Blade",
+    "spell_id": "KatarinaQ",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Katarina",
+    "spell_name": "Preparation",
+    "spell_id": "KatarinaW",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Katarina",
+    "spell_name": "Shunpo",
+    "spell_id": "KatarinaEWrapper",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Katarina",
+    "spell_name": "Death Lotus",
+    "spell_id": "KatarinaR",
+    "cooldown": "[75, 60, 45]",
+    "cooldown_text": "75/60/45"
+  },
+  {
+    "champion": "Kayle",
+    "spell_name": "Radiant Blast",
+    "spell_id": "KayleQ",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Kayle",
+    "spell_name": "Celestial Blessing",
+    "spell_id": "KayleW",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Kayle",
+    "spell_name": "Starfire Spellblade",
+    "spell_id": "KayleE",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Kayle",
+    "spell_name": "Divine Judgment",
+    "spell_id": "KayleR",
+    "cooldown": "[160, 120, 80]",
+    "cooldown_text": "160/120/80"
+  },
+  {
+    "champion": "Kayn",
+    "spell_name": "Reaping Slash",
+    "spell_id": "KaynQ",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "Kayn",
+    "spell_name": "Blade's Reach",
+    "spell_id": "KaynW",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Kayn",
+    "spell_name": "Shadow Step",
+    "spell_id": "KaynE",
+    "cooldown": "[21, 19, 17, 15, 13]",
+    "cooldown_text": "21/19/17/15/13"
+  },
+  {
+    "champion": "Kayn",
+    "spell_name": "Umbral Trespass",
+    "spell_id": "KaynR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Kennen",
+    "spell_name": "Thundering Shuriken",
+    "spell_id": "KennenShurikenHurlMissile1",
+    "cooldown": "[7, 6.25, 5.5, 4.75, 4]",
+    "cooldown_text": "7/6.25/5.5/4.75/4"
+  },
+  {
+    "champion": "Kennen",
+    "spell_name": "Electrical Surge",
+    "spell_id": "KennenBringTheLight",
+    "cooldown": "[13, 11.25, 9.5, 7.75, 6]",
+    "cooldown_text": "13/11.25/9.5/7.75/6"
+  },
+  {
+    "champion": "Kennen",
+    "spell_name": "Lightning Rush",
+    "spell_id": "KennenLightningRush",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Kennen",
+    "spell_name": "Slicing Maelstrom",
+    "spell_id": "KennenShurikenStorm",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Khazix",
+    "spell_name": "Taste Their Fear",
+    "spell_id": "KhazixQ",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Khazix",
+    "spell_name": "Void Spike",
+    "spell_id": "KhazixW",
+    "cooldown": "[9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "Khazix",
+    "spell_name": "Leap",
+    "spell_id": "KhazixE",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Khazix",
+    "spell_name": "Void Assault",
+    "spell_id": "KhazixR",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Kindred",
+    "spell_name": "Dance of Arrows",
+    "spell_id": "KindredQ",
+    "cooldown": "[9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "Kindred",
+    "spell_name": "Wolf's Frenzy",
+    "spell_id": "KindredW",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "Kindred",
+    "spell_name": "Mounting Dread",
+    "spell_id": "KindredEWrapper",
+    "cooldown": "[14, 12.5, 11, 9.5, 8]",
+    "cooldown_text": "14/12.5/11/9.5/8"
+  },
+  {
+    "champion": "Kindred",
+    "spell_name": "Lamb's Respite",
+    "spell_id": "KindredR",
+    "cooldown": "[160, 140, 120]",
+    "cooldown_text": "160/140/120"
+  },
+  {
+    "champion": "Kled",
+    "spell_name": "Bear Trap on a Rope",
+    "spell_id": "KledQ",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Kled",
+    "spell_name": "Violent Tendencies",
+    "spell_id": "KledW",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Kled",
+    "spell_name": "Jousting",
+    "spell_id": "KledE",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Kled",
+    "spell_name": "Chaaaaaaaarge!!!",
+    "spell_id": "KledR",
+    "cooldown": "[140, 125, 110]",
+    "cooldown_text": "140/125/110"
+  },
+  {
+    "champion": "KogMaw",
+    "spell_name": "Caustic Spittle",
+    "spell_id": "KogMawQ",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "KogMaw",
+    "spell_name": "Bio-Arcane Barrage",
+    "spell_id": "KogMawBioArcaneBarrage",
+    "cooldown": "[17, 17, 17, 17, 17]",
+    "cooldown_text": "17"
+  },
+  {
+    "champion": "KogMaw",
+    "spell_name": "Void Ooze",
+    "spell_id": "KogMawVoidOoze",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "KogMaw",
+    "spell_name": "Living Artillery",
+    "spell_id": "KogMawLivingArtillery",
+    "cooldown": "[2, 1.5, 1]",
+    "cooldown_text": "2/1.5/1"
+  },
+  {
+    "champion": "KSante",
+    "spell_name": "Ntofo Strikes",
+    "spell_id": "KSanteQ",
+    "cooldown": "[3.5, 3.5, 3.5, 3.5, 3.5]",
+    "cooldown_text": "3.5"
+  },
+  {
+    "champion": "KSante",
+    "spell_name": "Path Maker",
+    "spell_id": "KSanteW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "KSante",
+    "spell_name": "Footwork",
+    "spell_id": "KSanteE",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "KSante",
+    "spell_name": "All Out",
+    "spell_id": "KSanteR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Leblanc",
+    "spell_name": "Sigil of Malice",
+    "spell_id": "LeblancQ",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Leblanc",
+    "spell_name": "Distortion",
+    "spell_id": "LeblancW",
+    "cooldown": "[15, 13.75, 12.5, 11.25, 10]",
+    "cooldown_text": "15/13.75/12.5/11.25/10"
+  },
+  {
+    "champion": "Leblanc",
+    "spell_name": "Ethereal Chains",
+    "spell_id": "LeblancE",
+    "cooldown": "[14, 13.25, 12.5, 11.75, 11]",
+    "cooldown_text": "14/13.25/12.5/11.75/11"
+  },
+  {
+    "champion": "Leblanc",
+    "spell_name": "Mimic",
+    "spell_id": "LeblancR",
+    "cooldown": "[45, 35, 25]",
+    "cooldown_text": "45/35/25"
+  },
+  {
+    "champion": "LeeSin",
+    "spell_name": "Sonic Wave / Resonating Strike",
+    "spell_id": "LeeSinQOne",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "LeeSin",
+    "spell_name": "Safeguard / Iron Will",
+    "spell_id": "LeeSinWOne",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "LeeSin",
+    "spell_name": "Tempest / Cripple",
+    "spell_id": "LeeSinEOne",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "LeeSin",
+    "spell_name": "Dragon's Rage",
+    "spell_id": "LeeSinR",
+    "cooldown": "[110, 85, 60]",
+    "cooldown_text": "110/85/60"
+  },
+  {
+    "champion": "Leona",
+    "spell_name": "Shield of Daybreak",
+    "spell_id": "LeonaShieldOfDaybreak",
+    "cooldown": "[5, 5, 5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Leona",
+    "spell_name": "Eclipse",
+    "spell_id": "LeonaSolarBarrier",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Leona",
+    "spell_name": "Zenith Blade",
+    "spell_id": "LeonaZenithBlade",
+    "cooldown": "[12, 10.5, 9, 7.5, 6]",
+    "cooldown_text": "12/10.5/9/7.5/6"
+  },
+  {
+    "champion": "Leona",
+    "spell_name": "Solar Flare",
+    "spell_id": "LeonaSolarFlare",
+    "cooldown": "[90, 75, 60]",
+    "cooldown_text": "90/75/60"
+  },
+  {
+    "champion": "Lillia",
+    "spell_name": "Blooming Blows",
+    "spell_id": "LilliaQ",
+    "cooldown": "[6, 5.5, 5, 4.5, 4]",
+    "cooldown_text": "6/5.5/5/4.5/4"
+  },
+  {
+    "champion": "Lillia",
+    "spell_name": "Watch Out! Eep!",
+    "spell_id": "LilliaW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Lillia",
+    "spell_name": "Swirlseed",
+    "spell_id": "LilliaE",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Lillia",
+    "spell_name": "Lilting Lullaby",
+    "spell_id": "LilliaR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Lissandra",
+    "spell_name": "Ice Shard",
+    "spell_id": "LissandraQ",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Lissandra",
+    "spell_name": "Ring of Frost",
+    "spell_id": "LissandraW",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Lissandra",
+    "spell_name": "Glacial Path",
+    "spell_id": "LissandraE",
+    "cooldown": "[24, 21, 18, 15, 12]",
+    "cooldown_text": "24/21/18/15/12"
+  },
+  {
+    "champion": "Lissandra",
+    "spell_name": "Frozen Tomb",
+    "spell_id": "LissandraR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Lucian",
+    "spell_name": "Piercing Light",
+    "spell_id": "LucianQ",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Lucian",
+    "spell_name": "Ardent Blaze",
+    "spell_id": "LucianW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Lucian",
+    "spell_name": "Relentless Pursuit",
+    "spell_id": "LucianE",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "Lucian",
+    "spell_name": "The Culling",
+    "spell_id": "LucianR",
+    "cooldown": "[110, 100, 90]",
+    "cooldown_text": "110/100/90"
+  },
+  {
+    "champion": "Lulu",
+    "spell_name": "Glitterlance",
+    "spell_id": "LuluQ",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Lulu",
+    "spell_name": "Whimsy",
+    "spell_id": "LuluW",
+    "cooldown": "[18, 18, 18, 18, 18]",
+    "cooldown_text": "18"
+  },
+  {
+    "champion": "Lulu",
+    "spell_name": "Help, Pix!",
+    "spell_id": "LuluE",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Lulu",
+    "spell_name": "Wild Growth",
+    "spell_id": "LuluR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Lux",
+    "spell_name": "Light Binding",
+    "spell_id": "LuxLightBinding",
+    "cooldown": "[11, 10.5, 10, 9.5, 9]",
+    "cooldown_text": "11/10.5/10/9.5/9"
+  },
+  {
+    "champion": "Lux",
+    "spell_name": "Prismatic Barrier",
+    "spell_id": "LuxPrismaticWave",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Lux",
+    "spell_name": "Lucent Singularity",
+    "spell_id": "LuxLightStrikeKugel",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Lux",
+    "spell_name": "Final Spark",
+    "spell_id": "LuxR",
+    "cooldown": "[60, 50, 40]",
+    "cooldown_text": "60/50/40"
+  },
+  {
+    "champion": "Malphite",
+    "spell_name": "Seismic Shard",
+    "spell_id": "SeismicShard",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Malphite",
+    "spell_name": "Thunderclap",
+    "spell_id": "Obduracy",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Malphite",
+    "spell_name": "Ground Slam",
+    "spell_id": "Landslide",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Malphite",
+    "spell_name": "Unstoppable Force",
+    "spell_id": "UFSlash",
+    "cooldown": "[130, 105, 80]",
+    "cooldown_text": "130/105/80"
+  },
+  {
+    "champion": "Malzahar",
+    "spell_name": "Call of the Void",
+    "spell_id": "MalzaharQ",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Malzahar",
+    "spell_name": "Void Swarm",
+    "spell_id": "MalzaharW",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Malzahar",
+    "spell_name": "Malefic Visions",
+    "spell_id": "MalzaharE",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Malzahar",
+    "spell_name": "Nether Grasp",
+    "spell_id": "MalzaharR",
+    "cooldown": "[140, 110, 80]",
+    "cooldown_text": "140/110/80"
+  },
+  {
+    "champion": "Maokai",
+    "spell_name": "Bramble Smash",
+    "spell_id": "MaokaiQ",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "Maokai",
+    "spell_name": "Twisted Advance",
+    "spell_id": "MaokaiW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Maokai",
+    "spell_name": "Sapling Toss",
+    "spell_id": "MaokaiE",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "Maokai",
+    "spell_name": "Nature's Grasp",
+    "spell_id": "MaokaiR",
+    "cooldown": "[130, 110, 90]",
+    "cooldown_text": "130/110/90"
+  },
+  {
+    "champion": "MasterYi",
+    "spell_name": "Alpha Strike",
+    "spell_id": "AlphaStrike",
+    "cooldown": "[20, 19.5, 19, 18.5, 18]",
+    "cooldown_text": "20/19.5/19/18.5/18"
+  },
+  {
+    "champion": "MasterYi",
+    "spell_name": "Meditate",
+    "spell_id": "Meditate",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "MasterYi",
+    "spell_name": "Wuju Style",
+    "spell_id": "WujuStyle",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "MasterYi",
+    "spell_name": "Highlander",
+    "spell_id": "Highlander",
+    "cooldown": "[85, 85, 85]",
+    "cooldown_text": "85"
+  },
+  {
+    "champion": "Mel",
+    "spell_name": "Radiant Volley",
+    "spell_id": "MelQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Mel",
+    "spell_name": "Rebuttal",
+    "spell_id": "MelW",
+    "cooldown": "[35, 32, 29, 26, 23]",
+    "cooldown_text": "35/32/29/26/23"
+  },
+  {
+    "champion": "Mel",
+    "spell_name": "Solar Snare",
+    "spell_id": "MelE",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Mel",
+    "spell_name": "Golden Eclipse",
+    "spell_id": "MelR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Milio",
+    "spell_name": "Ultra Mega Fire Kick",
+    "spell_id": "MilioQ",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Milio",
+    "spell_name": "Cozy Campfire",
+    "spell_id": "MilioW",
+    "cooldown": "[29, 27, 25, 23, 21]",
+    "cooldown_text": "29/27/25/23/21"
+  },
+  {
+    "champion": "Milio",
+    "spell_name": "Warm Hugs",
+    "spell_id": "MilioE",
+    "cooldown": "[0.5, 0.5, 0.5, 0.5, 0.5]",
+    "cooldown_text": "0.5"
+  },
+  {
+    "champion": "Milio",
+    "spell_name": "Breath of Life",
+    "spell_id": "MilioR",
+    "cooldown": "[160, 145, 130]",
+    "cooldown_text": "160/145/130"
+  },
+  {
+    "champion": "MissFortune",
+    "spell_name": "Double Up",
+    "spell_id": "MissFortuneRicochetShot",
+    "cooldown": "[7, 6, 5, 4, 3]",
+    "cooldown_text": "7/6/5/4/3"
+  },
+  {
+    "champion": "MissFortune",
+    "spell_name": "Strut",
+    "spell_id": "MissFortuneViciousStrikes",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "MissFortune",
+    "spell_name": "Make It Rain",
+    "spell_id": "MissFortuneScattershot",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "MissFortune",
+    "spell_name": "Bullet Time",
+    "spell_id": "MissFortuneBulletTime",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "MonkeyKing",
+    "spell_name": "Crushing Blow",
+    "spell_id": "MonkeyKingDoubleAttack",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "MonkeyKing",
+    "spell_name": "Warrior Trickster",
+    "spell_id": "MonkeyKingDecoy",
+    "cooldown": "[22, 21, 20, 19, 18]",
+    "cooldown_text": "22/21/20/19/18"
+  },
+  {
+    "champion": "MonkeyKing",
+    "spell_name": "Nimbus Strike",
+    "spell_id": "MonkeyKingNimbus",
+    "cooldown": "[10, 9.25, 8.5, 7.75, 7]",
+    "cooldown_text": "10/9.25/8.5/7.75/7"
+  },
+  {
+    "champion": "MonkeyKing",
+    "spell_name": "Cyclone",
+    "spell_id": "MonkeyKingSpinToWin",
+    "cooldown": "[130, 110, 90]",
+    "cooldown_text": "130/110/90"
+  },
+  {
+    "champion": "Mordekaiser",
+    "spell_name": "Obliterate",
+    "spell_id": "MordekaiserQ",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Mordekaiser",
+    "spell_name": "Indestructible",
+    "spell_id": "MordekaiserW",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Mordekaiser",
+    "spell_name": "Death's Grasp",
+    "spell_id": "MordekaiserE",
+    "cooldown": "[18, 16, 14, 12, 10]",
+    "cooldown_text": "18/16/14/12/10"
+  },
+  {
+    "champion": "Mordekaiser",
+    "spell_name": "Realm of Death",
+    "spell_id": "MordekaiserR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Morgana",
+    "spell_name": "Dark Binding",
+    "spell_id": "MorganaQ",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Morgana",
+    "spell_name": "Tormented Shadow",
+    "spell_id": "MorganaW",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Morgana",
+    "spell_name": "Black Shield",
+    "spell_id": "MorganaE",
+    "cooldown": "[26, 23.5, 21, 18.5, 16]",
+    "cooldown_text": "26/23.5/21/18.5/16"
+  },
+  {
+    "champion": "Morgana",
+    "spell_name": "Soul Shackles",
+    "spell_id": "MorganaR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Naafiri",
+    "spell_name": "Darkin Daggers",
+    "spell_id": "NaafiriQ",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Naafiri",
+    "spell_name": "The Call of the Pack",
+    "spell_id": "NaafiriR",
+    "cooldown": "[26, 24, 22, 20, 18]",
+    "cooldown_text": "26/24/22/20/18"
+  },
+  {
+    "champion": "Naafiri",
+    "spell_name": "Eviscerate",
+    "spell_id": "NaafiriE",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Naafiri",
+    "spell_name": "Hounds' Pursuit",
+    "spell_id": "NaafiriW",
+    "cooldown": "[110, 95, 80]",
+    "cooldown_text": "110/95/80"
+  },
+  {
+    "champion": "Nami",
+    "spell_name": "Aqua Prison",
+    "spell_id": "NamiQ",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Nami",
+    "spell_name": "Ebb and Flow",
+    "spell_id": "NamiW",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Nami",
+    "spell_name": "Tidecaller's Blessing",
+    "spell_id": "NamiE",
+    "cooldown": "[11, 11, 11, 11, 11]",
+    "cooldown_text": "11"
+  },
+  {
+    "champion": "Nami",
+    "spell_name": "Tidal Wave",
+    "spell_id": "NamiR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Nasus",
+    "spell_name": "Siphoning Strike",
+    "spell_id": "NasusQ",
+    "cooldown": "[7.5, 6.5, 5.5, 4.5, 3.5]",
+    "cooldown_text": "7.5/6.5/5.5/4.5/3.5"
+  },
+  {
+    "champion": "Nasus",
+    "spell_name": "Wither",
+    "spell_id": "NasusW",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Nasus",
+    "spell_name": "Spirit Fire",
+    "spell_id": "NasusE",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Nasus",
+    "spell_name": "Fury of the Sands",
+    "spell_id": "NasusR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Nautilus",
+    "spell_name": "Dredge Line",
+    "spell_id": "NautilusAnchorDrag",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Nautilus",
+    "spell_name": "Titan's Wrath",
+    "spell_id": "NautilusPiercingGaze",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Nautilus",
+    "spell_name": "Riptide",
+    "spell_id": "NautilusSplashZone",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "Nautilus",
+    "spell_name": "Depth Charge",
+    "spell_id": "NautilusGrandLine",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Neeko",
+    "spell_name": "Blooming Burst",
+    "spell_id": "NeekoQ",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Neeko",
+    "spell_name": "Shapesplitter",
+    "spell_id": "NeekoW",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Neeko",
+    "spell_name": "Tangle-Barbs",
+    "spell_id": "NeekoE",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Neeko",
+    "spell_name": "Pop Blossom",
+    "spell_id": "NeekoR",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "Nidalee",
+    "spell_name": "Javelin Toss / Takedown",
+    "spell_id": "JavelinToss",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Nidalee",
+    "spell_name": "Bushwhack / Pounce",
+    "spell_id": "Bushwhack",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Nidalee",
+    "spell_name": "Primal Surge / Swipe",
+    "spell_id": "PrimalSurge",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Nidalee",
+    "spell_name": "Aspect Of The Cougar",
+    "spell_id": "AspectOfTheCougar",
+    "cooldown": "[3, 3, 3, 3]",
+    "cooldown_text": "3"
+  },
+  {
+    "champion": "Nilah",
+    "spell_name": "Formless Blade",
+    "spell_id": "NilahQ",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Nilah",
+    "spell_name": "Jubilant Veil",
+    "spell_id": "NilahW",
+    "cooldown": "[26, 25, 24, 23, 22]",
+    "cooldown_text": "26/25/24/23/22"
+  },
+  {
+    "champion": "Nilah",
+    "spell_name": "Slipstream",
+    "spell_id": "NilahE",
+    "cooldown": "[0.5, 0.5, 0.5, 0.5, 0.5]",
+    "cooldown_text": "0.5"
+  },
+  {
+    "champion": "Nilah",
+    "spell_name": "Apotheosis",
+    "spell_id": "NilahR",
+    "cooldown": "[110, 95, 80]",
+    "cooldown_text": "110/95/80"
+  },
+  {
+    "champion": "Nocturne",
+    "spell_name": "Duskbringer",
+    "spell_id": "NocturneDuskbringer",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Nocturne",
+    "spell_name": "Shroud of Darkness",
+    "spell_id": "NocturneShroudofDarkness",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Nocturne",
+    "spell_name": "Unspeakable Horror",
+    "spell_id": "NocturneUnspeakableHorror",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Nocturne",
+    "spell_name": "Paranoia",
+    "spell_id": "NocturneParanoia",
+    "cooldown": "[140, 115, 90]",
+    "cooldown_text": "140/115/90"
+  },
+  {
+    "champion": "Nunu",
+    "spell_name": "Consume",
+    "spell_id": "NunuQ",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Nunu",
+    "spell_name": "Biggest Snowball Ever!",
+    "spell_id": "NunuW",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Nunu",
+    "spell_name": "Snowball Barrage",
+    "spell_id": "NunuE",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Nunu",
+    "spell_name": "Absolute Zero",
+    "spell_id": "NunuR",
+    "cooldown": "[110, 100, 90]",
+    "cooldown_text": "110/100/90"
+  },
+  {
+    "champion": "Olaf",
+    "spell_name": "Undertow",
+    "spell_id": "OlafAxeThrowCast",
+    "cooldown": "[9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "Olaf",
+    "spell_name": "Tough It Out",
+    "spell_id": "OlafFrenziedStrikes",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Olaf",
+    "spell_name": "Reckless Swing",
+    "spell_id": "OlafRecklessStrike",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Olaf",
+    "spell_name": "Ragnarok",
+    "spell_id": "OlafRagnarok",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "Orianna",
+    "spell_name": "Command: Attack",
+    "spell_id": "OrianaIzunaCommand",
+    "cooldown": "[6, 5.25, 4.5, 3.75, 3]",
+    "cooldown_text": "6/5.25/4.5/3.75/3"
+  },
+  {
+    "champion": "Orianna",
+    "spell_name": "Command: Dissonance",
+    "spell_id": "OrianaDissonanceCommand",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Orianna",
+    "spell_name": "Command: Protect",
+    "spell_id": "OrianaRedactCommand",
+    "cooldown": "[9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "Orianna",
+    "spell_name": "Command: Shockwave",
+    "spell_id": "OrianaDetonateCommand",
+    "cooldown": "[110, 95, 80]",
+    "cooldown_text": "110/95/80"
+  },
+  {
+    "champion": "Ornn",
+    "spell_name": "Volcanic Rupture",
+    "spell_id": "OrnnQ",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Ornn",
+    "spell_name": "Bellows Breath",
+    "spell_id": "OrnnW",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Ornn",
+    "spell_name": "Searing Charge",
+    "spell_id": "OrnnE",
+    "cooldown": "[14, 13.5, 13, 12.5, 12]",
+    "cooldown_text": "14/13.5/13/12.5/12"
+  },
+  {
+    "champion": "Ornn",
+    "spell_name": "Call of the Forge God",
+    "spell_id": "OrnnR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Pantheon",
+    "spell_name": "Comet Spear",
+    "spell_id": "PantheonQ",
+    "cooldown": "[11, 10.25, 9.5, 8.75, 8]",
+    "cooldown_text": "11/10.25/9.5/8.75/8"
+  },
+  {
+    "champion": "Pantheon",
+    "spell_name": "Shield Vault",
+    "spell_id": "PantheonW",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Pantheon",
+    "spell_name": "Aegis Assault",
+    "spell_id": "PantheonE",
+    "cooldown": "[22, 21, 20, 19, 18]",
+    "cooldown_text": "22/21/20/19/18"
+  },
+  {
+    "champion": "Pantheon",
+    "spell_name": "Grand Starfall",
+    "spell_id": "PantheonR",
+    "cooldown": "[180, 165, 150]",
+    "cooldown_text": "180/165/150"
+  },
+  {
+    "champion": "Poppy",
+    "spell_name": "Hammer Shock",
+    "spell_id": "PoppyQ",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Poppy",
+    "spell_name": "Steadfast Presence",
+    "spell_id": "PoppyW",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Poppy",
+    "spell_name": "Heroic Charge",
+    "spell_id": "PoppyE",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Poppy",
+    "spell_name": "Keeper's Verdict",
+    "spell_id": "PoppyR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Pyke",
+    "spell_name": "Bone Skewer",
+    "spell_id": "PykeQ",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Pyke",
+    "spell_name": "Ghostwater Dive",
+    "spell_id": "PykeW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Pyke",
+    "spell_name": "Phantom Undertow",
+    "spell_id": "PykeE",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Pyke",
+    "spell_name": "Death From Below",
+    "spell_id": "PykeR",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Qiyana",
+    "spell_name": "Elemental Wrath / Edge of Ixtal",
+    "spell_id": "QiyanaQ",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Qiyana",
+    "spell_name": "Terrashape",
+    "spell_id": "QiyanaW",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Qiyana",
+    "spell_name": "Audacity",
+    "spell_id": "QiyanaE",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Qiyana",
+    "spell_name": "Supreme Display of Talent",
+    "spell_id": "QiyanaR",
+    "cooldown": "[120, 120, 120]",
+    "cooldown_text": "120"
+  },
+  {
+    "champion": "Quinn",
+    "spell_name": "Blinding Assault",
+    "spell_id": "QuinnQ",
+    "cooldown": "[11, 10.5, 10, 9.5, 9]",
+    "cooldown_text": "11/10.5/10/9.5/9"
+  },
+  {
+    "champion": "Quinn",
+    "spell_name": "Heightened Senses",
+    "spell_id": "QuinnW",
+    "cooldown": "[50, 45, 40, 35, 30]",
+    "cooldown_text": "50/45/40/35/30"
+  },
+  {
+    "champion": "Quinn",
+    "spell_name": "Vault",
+    "spell_id": "QuinnE",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Quinn",
+    "spell_name": "Behind Enemy Lines",
+    "spell_id": "QuinnR",
+    "cooldown": "[3, 3, 3]",
+    "cooldown_text": "3"
+  },
+  {
+    "champion": "Rakan",
+    "spell_name": "Gleaming Quill",
+    "spell_id": "RakanQ",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Rakan",
+    "spell_name": "Grand Entrance",
+    "spell_id": "RakanW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Rakan",
+    "spell_name": "Battle Dance",
+    "spell_id": "RakanE",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Rakan",
+    "spell_name": "The Quickness",
+    "spell_id": "RakanR",
+    "cooldown": "[130, 110, 90]",
+    "cooldown_text": "130/110/90"
+  },
+  {
+    "champion": "Rammus",
+    "spell_name": "Powerball",
+    "spell_id": "PowerBall",
+    "cooldown": "[12, 10.5, 9, 7.5, 6]",
+    "cooldown_text": "12/10.5/9/7.5/6"
+  },
+  {
+    "champion": "Rammus",
+    "spell_name": "Defensive Ball Curl",
+    "spell_id": "DefensiveBallCurl",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Rammus",
+    "spell_name": "Frenzying Taunt",
+    "spell_id": "PuncturingTaunt",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Rammus",
+    "spell_name": "Soaring Slam",
+    "spell_id": "Tremors2",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "RekSai",
+    "spell_name": "Queen's Wrath / Prey Seeker",
+    "spell_id": "RekSaiQ",
+    "cooldown": "[4, 3.5, 3, 2.5, 2]",
+    "cooldown_text": "4/3.5/3/2.5/2"
+  },
+  {
+    "champion": "RekSai",
+    "spell_name": "Burrow / Un-burrow",
+    "spell_id": "RekSaiW",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "RekSai",
+    "spell_name": "Furious Bite / Tunnel",
+    "spell_id": "RekSaiE",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "RekSai",
+    "spell_name": "Void Rush",
+    "spell_id": "RekSaiR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Rell",
+    "spell_name": "Shattering Strike",
+    "spell_id": "RellQ",
+    "cooldown": "[11, 10.5, 10, 9.5, 9]",
+    "cooldown_text": "11/10.5/10/9.5/9"
+  },
+  {
+    "champion": "Rell",
+    "spell_name": "Ferromancy: Crash Down",
+    "spell_id": "RellW_Dismount",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Rell",
+    "spell_name": "Full Tilt",
+    "spell_id": "RellE",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Rell",
+    "spell_name": "Magnet Storm",
+    "spell_id": "RellR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Renata",
+    "spell_name": "Handshake",
+    "spell_id": "RenataQ",
+    "cooldown": "[16, 16, 16, 16, 16]",
+    "cooldown_text": "16"
+  },
+  {
+    "champion": "Renata",
+    "spell_name": "Bailout",
+    "spell_id": "RenataW",
+    "cooldown": "[28, 27, 26, 25, 24]",
+    "cooldown_text": "28/27/26/25/24"
+  },
+  {
+    "champion": "Renata",
+    "spell_name": "Loyalty Program",
+    "spell_id": "RenataE",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Renata",
+    "spell_name": "Hostile Takeover",
+    "spell_id": "RenataR",
+    "cooldown": "[150, 130, 110]",
+    "cooldown_text": "150/130/110"
+  },
+  {
+    "champion": "Renekton",
+    "spell_name": "Cull the Meek",
+    "spell_id": "RenektonCleave",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Renekton",
+    "spell_name": "Ruthless Predator",
+    "spell_id": "RenektonPreExecute",
+    "cooldown": "[16, 14, 12, 10, 8]",
+    "cooldown_text": "16/14/12/10/8"
+  },
+  {
+    "champion": "Renekton",
+    "spell_name": "Slice and Dice",
+    "spell_id": "RenektonSliceAndDice",
+    "cooldown": "[16, 14.5, 13, 11.5, 10]",
+    "cooldown_text": "16/14.5/13/11.5/10"
+  },
+  {
+    "champion": "Renekton",
+    "spell_name": "Dominus",
+    "spell_id": "RenektonReignOfTheTyrant",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Rengar",
+    "spell_name": "Savagery",
+    "spell_id": "RengarQ",
+    "cooldown": "[0.25, 0.25, 0.25, 0.25, 0.25]",
+    "cooldown_text": "0.25"
+  },
+  {
+    "champion": "Rengar",
+    "spell_name": "Battle Roar",
+    "spell_id": "RengarW",
+    "cooldown": "[0.25, 0.25, 0.25, 0.25, 0.25]",
+    "cooldown_text": "0.25"
+  },
+  {
+    "champion": "Rengar",
+    "spell_name": "Bola Strike",
+    "spell_id": "RengarE",
+    "cooldown": "[0.25, 0.25, 0.25, 0.25, 0.25]",
+    "cooldown_text": "0.25"
+  },
+  {
+    "champion": "Rengar",
+    "spell_name": "Thrill of the Hunt",
+    "spell_id": "RengarR",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "Riven",
+    "spell_name": "Broken Wings",
+    "spell_id": "RivenTriCleave",
+    "cooldown": "[13, 13, 13, 13, 13]",
+    "cooldown_text": "13"
+  },
+  {
+    "champion": "Riven",
+    "spell_name": "Ki Burst",
+    "spell_id": "RivenMartyr",
+    "cooldown": "[11, 10, 9, 8, 7]",
+    "cooldown_text": "11/10/9/8/7"
+  },
+  {
+    "champion": "Riven",
+    "spell_name": "Valor",
+    "spell_id": "RivenFeint",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Riven",
+    "spell_name": "Blade of the Exile",
+    "spell_id": "RivenFengShuiEngine",
+    "cooldown": "[120, 90, 60]",
+    "cooldown_text": "120/90/60"
+  },
+  {
+    "champion": "Rumble",
+    "spell_name": "Flamespitter",
+    "spell_id": "RumbleFlameThrower",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Rumble",
+    "spell_name": "Scrap Shield",
+    "spell_id": "RumbleShield",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Rumble",
+    "spell_name": "Electro Harpoon",
+    "spell_id": "RumbleGrenade",
+    "cooldown": "[0.5, 0.5, 0.5, 0.5, 0.5]",
+    "cooldown_text": "0.5"
+  },
+  {
+    "champion": "Rumble",
+    "spell_name": "The Equalizer",
+    "spell_id": "RumbleCarpetBomb",
+    "cooldown": "[130, 105, 80]",
+    "cooldown_text": "130/105/80"
+  },
+  {
+    "champion": "Ryze",
+    "spell_name": "Overload",
+    "spell_id": "RyzeQWrapper",
+    "cooldown": "[5, 5, 5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Ryze",
+    "spell_name": "Rune Prison",
+    "spell_id": "RyzeW",
+    "cooldown": "[11, 10.5, 10, 9.5, 9]",
+    "cooldown_text": "11/10.5/10/9.5/9"
+  },
+  {
+    "champion": "Ryze",
+    "spell_name": "Spell Flux",
+    "spell_id": "RyzeE",
+    "cooldown": "[3.5, 3.25, 3, 2.75, 2.5]",
+    "cooldown_text": "3.5/3.25/3/2.75/2.5"
+  },
+  {
+    "champion": "Ryze",
+    "spell_name": "Realm Warp",
+    "spell_id": "RyzeR",
+    "cooldown": "[180, 160, 140]",
+    "cooldown_text": "180/160/140"
+  },
+  {
+    "champion": "Samira",
+    "spell_name": "Flair",
+    "spell_id": "SamiraQ",
+    "cooldown": "[6, 5, 4, 3, 2]",
+    "cooldown_text": "6/5/4/3/2"
+  },
+  {
+    "champion": "Samira",
+    "spell_name": "Blade Whirl",
+    "spell_id": "SamiraW",
+    "cooldown": "[30, 28, 26, 24, 22]",
+    "cooldown_text": "30/28/26/24/22"
+  },
+  {
+    "champion": "Samira",
+    "spell_name": "Wild Rush",
+    "spell_id": "SamiraE",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Samira",
+    "spell_name": "Inferno Trigger",
+    "spell_id": "SamiraR",
+    "cooldown": "[5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Sejuani",
+    "spell_name": "Arctic Assault",
+    "spell_id": "SejuaniQ",
+    "cooldown": "[19, 17.5, 16, 14.5, 13]",
+    "cooldown_text": "19/17.5/16/14.5/13"
+  },
+  {
+    "champion": "Sejuani",
+    "spell_name": "Winter's Wrath",
+    "spell_id": "SejuaniW",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Sejuani",
+    "spell_name": "Permafrost",
+    "spell_id": "SejuaniE",
+    "cooldown": "[1.5, 1.5, 1.5, 1.5, 1.5]",
+    "cooldown_text": "1.5"
+  },
+  {
+    "champion": "Sejuani",
+    "spell_name": "Glacial Prison",
+    "spell_id": "SejuaniR",
+    "cooldown": "[130, 110, 90]",
+    "cooldown_text": "130/110/90"
+  },
+  {
+    "champion": "Senna",
+    "spell_name": "Piercing Darkness",
+    "spell_id": "SennaQ",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Senna",
+    "spell_name": "Last Embrace",
+    "spell_id": "SennaW",
+    "cooldown": "[11, 11, 11, 11, 11]",
+    "cooldown_text": "11"
+  },
+  {
+    "champion": "Senna",
+    "spell_name": "Curse of the Black Mist",
+    "spell_id": "SennaE",
+    "cooldown": "[26, 24.5, 23, 21.5, 20]",
+    "cooldown_text": "26/24.5/23/21.5/20"
+  },
+  {
+    "champion": "Senna",
+    "spell_name": "Dawning Shadow",
+    "spell_id": "SennaR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Seraphine",
+    "spell_name": "High Note",
+    "spell_id": "SeraphineQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Seraphine",
+    "spell_name": "Surround Sound",
+    "spell_id": "SeraphineW",
+    "cooldown": "[22, 22, 22, 22, 22]",
+    "cooldown_text": "22"
+  },
+  {
+    "champion": "Seraphine",
+    "spell_name": "Beat Drop",
+    "spell_id": "SeraphineE",
+    "cooldown": "[11, 10.5, 10, 9.5, 9]",
+    "cooldown_text": "11/10.5/10/9.5/9"
+  },
+  {
+    "champion": "Seraphine",
+    "spell_name": "Encore",
+    "spell_id": "SeraphineR",
+    "cooldown": "[160, 140, 120]",
+    "cooldown_text": "160/140/120"
+  },
+  {
+    "champion": "Sett",
+    "spell_name": "Knuckle Down",
+    "spell_id": "SettQ",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Sett",
+    "spell_name": "Haymaker",
+    "spell_id": "SettW",
+    "cooldown": "[18, 16.5, 15, 13.5, 12]",
+    "cooldown_text": "18/16.5/15/13.5/12"
+  },
+  {
+    "champion": "Sett",
+    "spell_name": "Facebreaker",
+    "spell_id": "SettE",
+    "cooldown": "[16, 14.5, 13, 11.5, 10]",
+    "cooldown_text": "16/14.5/13/11.5/10"
+  },
+  {
+    "champion": "Sett",
+    "spell_name": "The Show Stopper",
+    "spell_id": "SettR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Shaco",
+    "spell_name": "Deceive",
+    "spell_id": "Deceive",
+    "cooldown": "[13, 12.5, 12, 11.5, 11]",
+    "cooldown_text": "13/12.5/12/11.5/11"
+  },
+  {
+    "champion": "Shaco",
+    "spell_name": "Jack In The Box",
+    "spell_id": "JackInTheBox",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Shaco",
+    "spell_name": "Two-Shiv Poison",
+    "spell_id": "TwoShivPoison",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Shaco",
+    "spell_name": "Hallucinate",
+    "spell_id": "HallucinateFull",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "Shen",
+    "spell_name": "Twilight Assault",
+    "spell_id": "ShenQ",
+    "cooldown": "[8, 7.25, 6.5, 5.75, 5]",
+    "cooldown_text": "8/7.25/6.5/5.75/5"
+  },
+  {
+    "champion": "Shen",
+    "spell_name": "Spirit's Refuge",
+    "spell_id": "ShenW",
+    "cooldown": "[16, 14.5, 13, 11.5, 10]",
+    "cooldown_text": "16/14.5/13/11.5/10"
+  },
+  {
+    "champion": "Shen",
+    "spell_name": "Shadow Dash",
+    "spell_id": "ShenE",
+    "cooldown": "[18, 16, 14, 12, 10]",
+    "cooldown_text": "18/16/14/12/10"
+  },
+  {
+    "champion": "Shen",
+    "spell_name": "Stand United",
+    "spell_id": "ShenR",
+    "cooldown": "[200, 180, 160]",
+    "cooldown_text": "200/180/160"
+  },
+  {
+    "champion": "Shyvana",
+    "spell_name": "Twin Bite",
+    "spell_id": "ShyvanaDoubleAttack",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Shyvana",
+    "spell_name": "Burnout",
+    "spell_id": "ShyvanaImmolationAura",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Shyvana",
+    "spell_name": "Flame Breath",
+    "spell_id": "ShyvanaFireball",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Shyvana",
+    "spell_name": "Dragon's Descent",
+    "spell_id": "ShyvanaTransformCast",
+    "cooldown": "[0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Singed",
+    "spell_name": "Poison Trail",
+    "spell_id": "PoisonTrail",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Singed",
+    "spell_name": "Mega Adhesive",
+    "spell_id": "MegaAdhesive",
+    "cooldown": "[17, 16, 15, 14, 13]",
+    "cooldown_text": "17/16/15/14/13"
+  },
+  {
+    "champion": "Singed",
+    "spell_name": "Fling",
+    "spell_id": "Fling",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Singed",
+    "spell_name": "Insanity Potion",
+    "spell_id": "InsanityPotion",
+    "cooldown": "[100, 100, 100]",
+    "cooldown_text": "100"
+  },
+  {
+    "champion": "Sion",
+    "spell_name": "Decimating Smash",
+    "spell_id": "SionQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Sion",
+    "spell_name": "Soul Furnace",
+    "spell_id": "SionW",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Sion",
+    "spell_name": "Roar of the Slayer",
+    "spell_id": "SionE",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Sion",
+    "spell_name": "Unstoppable Onslaught",
+    "spell_id": "SionR",
+    "cooldown": "[140, 100, 60]",
+    "cooldown_text": "140/100/60"
+  },
+  {
+    "champion": "Sivir",
+    "spell_name": "Boomerang Blade",
+    "spell_id": "SivirQ",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Sivir",
+    "spell_name": "Ricochet",
+    "spell_id": "SivirW",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Sivir",
+    "spell_name": "Spell Shield",
+    "spell_id": "SivirE",
+    "cooldown": "[24, 22.5, 21, 19.5, 18]",
+    "cooldown_text": "24/22.5/21/19.5/18"
+  },
+  {
+    "champion": "Sivir",
+    "spell_name": "On The Hunt",
+    "spell_id": "SivirR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Skarner",
+    "spell_name": "Shattered Earth / Upheaval",
+    "spell_id": "SkarnerQ",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Skarner",
+    "spell_name": "Seismic Bastion",
+    "spell_id": "SkarnerW",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Skarner",
+    "spell_name": "Ixtal's Impact",
+    "spell_id": "SkarnerE",
+    "cooldown": "[22, 21, 20, 19, 18]",
+    "cooldown_text": "22/21/20/19/18"
+  },
+  {
+    "champion": "Skarner",
+    "spell_name": "Impale",
+    "spell_id": "SkarnerR",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "Smolder",
+    "spell_name": "Super Scorcher Breath",
+    "spell_id": "SmolderQ",
+    "cooldown": "[5.5, 5, 4.5, 4, 3.5]",
+    "cooldown_text": "5.5/5/4.5/4/3.5"
+  },
+  {
+    "champion": "Smolder",
+    "spell_name": "Achooo!",
+    "spell_id": "SmolderW",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Smolder",
+    "spell_name": "Flap, Flap, Flap",
+    "spell_id": "SmolderE",
+    "cooldown": "[24, 22, 20, 18, 16]",
+    "cooldown_text": "24/22/20/18/16"
+  },
+  {
+    "champion": "Smolder",
+    "spell_name": "MMOOOMMMM!",
+    "spell_id": "SmolderR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Sona",
+    "spell_name": "Hymn of Valor",
+    "spell_id": "SonaQ",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Sona",
+    "spell_name": "Aria of Perseverance",
+    "spell_id": "SonaW",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Sona",
+    "spell_name": "Song of Celerity",
+    "spell_id": "SonaE",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Sona",
+    "spell_name": "Crescendo",
+    "spell_id": "SonaR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Soraka",
+    "spell_name": "Starcall",
+    "spell_id": "SorakaQ",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Soraka",
+    "spell_name": "Astral Infusion",
+    "spell_id": "SorakaW",
+    "cooldown": "[6, 5, 4, 3, 2]",
+    "cooldown_text": "6/5/4/3/2"
+  },
+  {
+    "champion": "Soraka",
+    "spell_name": "Equinox",
+    "spell_id": "SorakaE",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Soraka",
+    "spell_name": "Wish",
+    "spell_id": "SorakaR",
+    "cooldown": "[150, 135, 120]",
+    "cooldown_text": "150/135/120"
+  },
+  {
+    "champion": "Swain",
+    "spell_name": "Death's Hand",
+    "spell_id": "SwainQ",
+    "cooldown": "[7, 6, 5, 4, 3]",
+    "cooldown_text": "7/6/5/4/3"
+  },
+  {
+    "champion": "Swain",
+    "spell_name": "Vision of Empire",
+    "spell_id": "SwainW",
+    "cooldown": "[22, 21, 20, 19, 18]",
+    "cooldown_text": "22/21/20/19/18"
+  },
+  {
+    "champion": "Swain",
+    "spell_name": "Nevermove",
+    "spell_id": "SwainE",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Swain",
+    "spell_name": "Demonic Ascension",
+    "spell_id": "SwainR",
+    "cooldown": "[120, 120, 120]",
+    "cooldown_text": "120"
+  },
+  {
+    "champion": "Sylas",
+    "spell_name": "Chain Lash",
+    "spell_id": "SylasQ",
+    "cooldown": "[10, 9, 8, 7, 6]",
+    "cooldown_text": "10/9/8/7/6"
+  },
+  {
+    "champion": "Sylas",
+    "spell_name": "Kingslayer",
+    "spell_id": "SylasW",
+    "cooldown": "[12, 10.5, 9, 7.5, 6]",
+    "cooldown_text": "12/10.5/9/7.5/6"
+  },
+  {
+    "champion": "Sylas",
+    "spell_name": "Abscond / Abduct",
+    "spell_id": "SylasE",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Sylas",
+    "spell_name": "Hijack",
+    "spell_id": "SylasR",
+    "cooldown": "[80, 55, 30]",
+    "cooldown_text": "80/55/30"
+  },
+  {
+    "champion": "Syndra",
+    "spell_name": "Dark Sphere",
+    "spell_id": "SyndraQ",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Syndra",
+    "spell_name": "Force of Will",
+    "spell_id": "SyndraW",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Syndra",
+    "spell_name": "Scatter the Weak",
+    "spell_id": "SyndraE",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Syndra",
+    "spell_name": "Unleashed Power",
+    "spell_id": "SyndraR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "TahmKench",
+    "spell_name": "Tongue Lash",
+    "spell_id": "TahmKenchQ",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "TahmKench",
+    "spell_name": "Abyssal Dive",
+    "spell_id": "TahmKenchW",
+    "cooldown": "[21, 20, 19, 18, 17]",
+    "cooldown_text": "21/20/19/18/17"
+  },
+  {
+    "champion": "TahmKench",
+    "spell_name": "Thick Skin",
+    "spell_id": "TahmKenchE",
+    "cooldown": "[3, 3, 3, 3, 3]",
+    "cooldown_text": "3"
+  },
+  {
+    "champion": "TahmKench",
+    "spell_name": "Devour",
+    "spell_id": "TahmKenchRWrapper",
+    "cooldown": "[0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Taliyah",
+    "spell_name": "Threaded Volley",
+    "spell_id": "TaliyahQ",
+    "cooldown": "[7, 6, 5, 4, 3]",
+    "cooldown_text": "7/6/5/4/3"
+  },
+  {
+    "champion": "Taliyah",
+    "spell_name": "Seismic Shove",
+    "spell_id": "TaliyahWVC",
+    "cooldown": "[14, 12.5, 11, 9.5, 8]",
+    "cooldown_text": "14/12.5/11/9.5/8"
+  },
+  {
+    "champion": "Taliyah",
+    "spell_name": "Unraveled Earth",
+    "spell_id": "TaliyahE",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Taliyah",
+    "spell_name": "Weaver's Wall",
+    "spell_id": "TaliyahR",
+    "cooldown": "[180, 150, 120]",
+    "cooldown_text": "180/150/120"
+  },
+  {
+    "champion": "Talon",
+    "spell_name": "Noxian Diplomacy",
+    "spell_id": "TalonQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Talon",
+    "spell_name": "Rake",
+    "spell_id": "TalonW",
+    "cooldown": "[9, 8.5, 8, 7.5, 7]",
+    "cooldown_text": "9/8.5/8/7.5/7"
+  },
+  {
+    "champion": "Talon",
+    "spell_name": "Assassin's Path",
+    "spell_id": "TalonE",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Talon",
+    "spell_name": "Shadow Assault",
+    "spell_id": "TalonR",
+    "cooldown": "[100, 80, 60]",
+    "cooldown_text": "100/80/60"
+  },
+  {
+    "champion": "Taric",
+    "spell_name": "Starlight's Touch",
+    "spell_id": "TaricQ",
+    "cooldown": "[3, 3, 3, 3, 3]",
+    "cooldown_text": "3"
+  },
+  {
+    "champion": "Taric",
+    "spell_name": "Bastion",
+    "spell_id": "TaricW",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Taric",
+    "spell_name": "Dazzle",
+    "spell_id": "TaricE",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Taric",
+    "spell_name": "Cosmic Radiance",
+    "spell_id": "TaricR",
+    "cooldown": "[180, 150, 120]",
+    "cooldown_text": "180/150/120"
+  },
+  {
+    "champion": "Teemo",
+    "spell_name": "Blinding Dart",
+    "spell_id": "TeemoQ",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Teemo",
+    "spell_name": "Move Quick",
+    "spell_id": "TeemoW",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Teemo",
+    "spell_name": "Toxic Shot",
+    "spell_id": "TeemoE",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Teemo",
+    "spell_name": "Noxious Trap",
+    "spell_id": "TeemoR",
+    "cooldown": "[0.25, 0.25, 0.25]",
+    "cooldown_text": "0.25"
+  },
+  {
+    "champion": "Thresh",
+    "spell_name": "Death Sentence",
+    "spell_id": "ThreshQ",
+    "cooldown": "[19, 16.5, 14, 11.5, 9]",
+    "cooldown_text": "19/16.5/14/11.5/9"
+  },
+  {
+    "champion": "Thresh",
+    "spell_name": "Dark Passage",
+    "spell_id": "ThreshW",
+    "cooldown": "[21, 20, 19, 18, 17]",
+    "cooldown_text": "21/20/19/18/17"
+  },
+  {
+    "champion": "Thresh",
+    "spell_name": "Flay",
+    "spell_id": "ThreshE",
+    "cooldown": "[13, 12.25, 11.5, 10.75, 10]",
+    "cooldown_text": "13/12.25/11.5/10.75/10"
+  },
+  {
+    "champion": "Thresh",
+    "spell_name": "The Box",
+    "spell_id": "ThreshRPenta",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Tristana",
+    "spell_name": "Rapid Fire",
+    "spell_id": "TristanaQ",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Tristana",
+    "spell_name": "Rocket Jump",
+    "spell_id": "TristanaW",
+    "cooldown": "[22, 20, 18, 16, 14]",
+    "cooldown_text": "22/20/18/16/14"
+  },
+  {
+    "champion": "Tristana",
+    "spell_name": "Explosive Charge",
+    "spell_id": "TristanaE",
+    "cooldown": "[16, 15.5, 15, 14.5, 14]",
+    "cooldown_text": "16/15.5/15/14.5/14"
+  },
+  {
+    "champion": "Tristana",
+    "spell_name": "Buster Shot",
+    "spell_id": "TristanaR",
+    "cooldown": "[100, 100, 100]",
+    "cooldown_text": "100"
+  },
+  {
+    "champion": "Trundle",
+    "spell_name": "Chomp",
+    "spell_id": "TrundleTrollSmash",
+    "cooldown": "[3.5, 3.5, 3.5, 3.5, 3.5]",
+    "cooldown_text": "3.5"
+  },
+  {
+    "champion": "Trundle",
+    "spell_name": "Frozen Domain",
+    "spell_id": "trundledesecrate",
+    "cooldown": "[18, 17, 16, 15, 14]",
+    "cooldown_text": "18/17/16/15/14"
+  },
+  {
+    "champion": "Trundle",
+    "spell_name": "Pillar of Ice",
+    "spell_id": "TrundleCircle",
+    "cooldown": "[21, 19.5, 18, 16.5, 15]",
+    "cooldown_text": "21/19.5/18/16.5/15"
+  },
+  {
+    "champion": "Trundle",
+    "spell_name": "Subjugate",
+    "spell_id": "TrundlePain",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Tryndamere",
+    "spell_name": "Bloodlust",
+    "spell_id": "TryndamereQ",
+    "cooldown": "[12, 12, 12, 12, 12]",
+    "cooldown_text": "12"
+  },
+  {
+    "champion": "Tryndamere",
+    "spell_name": "Mocking Shout",
+    "spell_id": "TryndamereW",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Tryndamere",
+    "spell_name": "Spinning Slash",
+    "spell_id": "TryndamereE",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Tryndamere",
+    "spell_name": "Undying Rage",
+    "spell_id": "UndyingRage",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "TwistedFate",
+    "spell_name": "Wild Cards",
+    "spell_id": "WildCards",
+    "cooldown": "[6, 5.75, 5.5, 5.25, 5]",
+    "cooldown_text": "6/5.75/5.5/5.25/5"
+  },
+  {
+    "champion": "TwistedFate",
+    "spell_name": "Pick a Card",
+    "spell_id": "PickACard",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "TwistedFate",
+    "spell_name": "Stacked Deck",
+    "spell_id": "CardmasterStack",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "TwistedFate",
+    "spell_name": "Destiny",
+    "spell_id": "Destiny",
+    "cooldown": "[170, 140, 110]",
+    "cooldown_text": "170/140/110"
+  },
+  {
+    "champion": "Twitch",
+    "spell_name": "Ambush",
+    "spell_id": "TwitchHideInShadows",
+    "cooldown": "[16, 16, 16, 16, 16]",
+    "cooldown_text": "16"
+  },
+  {
+    "champion": "Twitch",
+    "spell_name": "Venom Cask",
+    "spell_id": "TwitchVenomCask",
+    "cooldown": "[13, 12, 11, 10, 9]",
+    "cooldown_text": "13/12/11/10/9"
+  },
+  {
+    "champion": "Twitch",
+    "spell_name": "Contaminate",
+    "spell_id": "TwitchExpunge",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Twitch",
+    "spell_name": "Spray and Pray",
+    "spell_id": "TwitchFullAutomatic",
+    "cooldown": "[90, 90, 90]",
+    "cooldown_text": "90"
+  },
+  {
+    "champion": "Udyr",
+    "spell_name": "Wilding Claw",
+    "spell_id": "UdyrQ",
+    "cooldown": "[6, 6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Udyr",
+    "spell_name": "Iron Mantle",
+    "spell_id": "UdyrW",
+    "cooldown": "[6, 6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Udyr",
+    "spell_name": "Blazing Stampede",
+    "spell_id": "UdyrE",
+    "cooldown": "[6, 6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Udyr",
+    "spell_name": "Wingborne Storm",
+    "spell_id": "UdyrR",
+    "cooldown": "[6, 6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Urgot",
+    "spell_name": "Corrosive Charge",
+    "spell_id": "UrgotQ",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Urgot",
+    "spell_name": "Purge",
+    "spell_id": "UrgotW",
+    "cooldown": "[12, 9, 6, 3, 0]",
+    "cooldown_text": "12/9/6/3/0"
+  },
+  {
+    "champion": "Urgot",
+    "spell_name": "Disdain",
+    "spell_id": "UrgotE",
+    "cooldown": "[16, 15.5, 15, 14.5, 14]",
+    "cooldown_text": "16/15.5/15/14.5/14"
+  },
+  {
+    "champion": "Urgot",
+    "spell_name": "Fear Beyond Death",
+    "spell_id": "UrgotR",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Varus",
+    "spell_name": "Piercing Arrow",
+    "spell_id": "VarusQ",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Varus",
+    "spell_name": "Blighted Quiver",
+    "spell_id": "VarusW",
+    "cooldown": "[40, 40, 40, 40, 40]",
+    "cooldown_text": "40"
+  },
+  {
+    "champion": "Varus",
+    "spell_name": "Hail of Arrows",
+    "spell_id": "VarusE",
+    "cooldown": "[18, 16, 14, 12, 10]",
+    "cooldown_text": "18/16/14/12/10"
+  },
+  {
+    "champion": "Varus",
+    "spell_name": "Chain of Corruption",
+    "spell_id": "VarusR",
+    "cooldown": "[100, 80, 60]",
+    "cooldown_text": "100/80/60"
+  },
+  {
+    "champion": "Vayne",
+    "spell_name": "Tumble",
+    "spell_id": "VayneTumble",
+    "cooldown": "[6, 5, 4, 3, 2]",
+    "cooldown_text": "6/5/4/3/2"
+  },
+  {
+    "champion": "Vayne",
+    "spell_name": "Silver Bolts",
+    "spell_id": "VayneSilveredBolts",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Vayne",
+    "spell_name": "Condemn",
+    "spell_id": "VayneCondemn",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Vayne",
+    "spell_name": "Final Hour",
+    "spell_id": "VayneInquisition",
+    "cooldown": "[100, 85, 70]",
+    "cooldown_text": "100/85/70"
+  },
+  {
+    "champion": "Veigar",
+    "spell_name": "Baleful Strike",
+    "spell_id": "VeigarBalefulStrike",
+    "cooldown": "[6, 5.5, 5, 4.5, 4]",
+    "cooldown_text": "6/5.5/5/4.5/4"
+  },
+  {
+    "champion": "Veigar",
+    "spell_name": "Dark Matter",
+    "spell_id": "VeigarDarkMatter",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Veigar",
+    "spell_name": "Event Horizon",
+    "spell_id": "VeigarEventHorizon",
+    "cooldown": "[20, 18.5, 17, 15.5, 14]",
+    "cooldown_text": "20/18.5/17/15.5/14"
+  },
+  {
+    "champion": "Veigar",
+    "spell_name": "Primordial Burst",
+    "spell_id": "VeigarR",
+    "cooldown": "[100, 80, 60]",
+    "cooldown_text": "100/80/60"
+  },
+  {
+    "champion": "Velkoz",
+    "spell_name": "Plasma Fission",
+    "spell_id": "VelkozQ",
+    "cooldown": "[7, 7, 7, 7, 7]",
+    "cooldown_text": "7"
+  },
+  {
+    "champion": "Velkoz",
+    "spell_name": "Void Rift",
+    "spell_id": "VelkozW",
+    "cooldown": "[1.5, 1.5, 1.5, 1.5, 1.5]",
+    "cooldown_text": "1.5"
+  },
+  {
+    "champion": "Velkoz",
+    "spell_name": "Tectonic Disruption",
+    "spell_id": "VelkozE",
+    "cooldown": "[12, 11.5, 11, 10.5, 10]",
+    "cooldown_text": "12/11.5/11/10.5/10"
+  },
+  {
+    "champion": "Velkoz",
+    "spell_name": "Life Form Disintegration Ray",
+    "spell_id": "VelkozR",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "Vex",
+    "spell_name": "Mistral Bolt",
+    "spell_id": "VexQ",
+    "cooldown": "[8, 7, 6, 5, 4]",
+    "cooldown_text": "8/7/6/5/4"
+  },
+  {
+    "champion": "Vex",
+    "spell_name": "Personal Space",
+    "spell_id": "VexW",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Vex",
+    "spell_name": "Looming Darkness",
+    "spell_id": "VexE",
+    "cooldown": "[13, 13, 13, 13, 13]",
+    "cooldown_text": "13"
+  },
+  {
+    "champion": "Vex",
+    "spell_name": "Shadow Surge",
+    "spell_id": "VexR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Vi",
+    "spell_name": "Vault Breaker",
+    "spell_id": "ViQ",
+    "cooldown": "[12, 10.5, 9, 7.5, 6]",
+    "cooldown_text": "12/10.5/9/7.5/6"
+  },
+  {
+    "champion": "Vi",
+    "spell_name": "Denting Blows",
+    "spell_id": "ViW",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Vi",
+    "spell_name": "Relentless Force",
+    "spell_id": "ViE",
+    "cooldown": "[1, 1, 1, 1, 1]",
+    "cooldown_text": "1"
+  },
+  {
+    "champion": "Vi",
+    "spell_name": "Cease and Desist",
+    "spell_id": "ViR",
+    "cooldown": "[140, 115, 90]",
+    "cooldown_text": "140/115/90"
+  },
+  {
+    "champion": "Viego",
+    "spell_name": "Blade of the Ruined King",
+    "spell_id": "ViegoQ",
+    "cooldown": "[5, 4.5, 4, 3.5, 3]",
+    "cooldown_text": "5/4.5/4/3.5/3"
+  },
+  {
+    "champion": "Viego",
+    "spell_name": "Spectral Maw",
+    "spell_id": "ViegoW",
+    "cooldown": "[8, 8, 8, 8, 8]",
+    "cooldown_text": "8"
+  },
+  {
+    "champion": "Viego",
+    "spell_name": "Harrowed Path",
+    "spell_id": "ViegoE",
+    "cooldown": "[14, 12, 10, 8, 6]",
+    "cooldown_text": "14/12/10/8/6"
+  },
+  {
+    "champion": "Viego",
+    "spell_name": "Heartbreaker",
+    "spell_id": "ViegoR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Viktor",
+    "spell_name": "Siphon Power",
+    "spell_id": "ViktorQ",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Viktor",
+    "spell_name": "Gravity Field",
+    "spell_id": "ViktorW",
+    "cooldown": "[17, 16, 15, 14, 13]",
+    "cooldown_text": "17/16/15/14/13"
+  },
+  {
+    "champion": "Viktor",
+    "spell_name": "Hextech Ray",
+    "spell_id": "ViktorE",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Viktor",
+    "spell_name": "Arcane Storm",
+    "spell_id": "ViktorR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Vladimir",
+    "spell_name": "Transfusion",
+    "spell_id": "VladimirQ",
+    "cooldown": "[9, 7.9, 6.8, 5.7, 4.6]",
+    "cooldown_text": "9/7.9/6.8/5.7/4.6"
+  },
+  {
+    "champion": "Vladimir",
+    "spell_name": "Sanguine Pool",
+    "spell_id": "VladimirSanguinePool",
+    "cooldown": "[28, 25, 22, 19, 16]",
+    "cooldown_text": "28/25/22/19/16"
+  },
+  {
+    "champion": "Vladimir",
+    "spell_name": "Tides of Blood",
+    "spell_id": "VladimirE",
+    "cooldown": "[13, 11, 9, 7, 5]",
+    "cooldown_text": "13/11/9/7/5"
+  },
+  {
+    "champion": "Vladimir",
+    "spell_name": "Hemoplague",
+    "spell_id": "VladimirHemoplague",
+    "cooldown": "[120, 120, 120]",
+    "cooldown_text": "120"
+  },
+  {
+    "champion": "Volibear",
+    "spell_name": "Thundering Smash",
+    "spell_id": "VolibearQ",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Volibear",
+    "spell_name": "Frenzied Maul",
+    "spell_id": "VolibearW",
+    "cooldown": "[5, 5, 5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Volibear",
+    "spell_name": "Sky Splitter",
+    "spell_id": "VolibearE",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Volibear",
+    "spell_name": "Stormbringer",
+    "spell_id": "VolibearR",
+    "cooldown": "[160, 135, 110]",
+    "cooldown_text": "160/135/110"
+  },
+  {
+    "champion": "Warwick",
+    "spell_name": "Jaws of the Beast",
+    "spell_id": "WarwickQ",
+    "cooldown": "[8, 7.5, 7, 6.5, 6]",
+    "cooldown_text": "8/7.5/7/6.5/6"
+  },
+  {
+    "champion": "Warwick",
+    "spell_name": "Blood Hunt",
+    "spell_id": "WarwickW",
+    "cooldown": "[80, 70, 60, 50, 40]",
+    "cooldown_text": "80/70/60/50/40"
+  },
+  {
+    "champion": "Warwick",
+    "spell_name": "Primal Howl",
+    "spell_id": "WarwickE",
+    "cooldown": "[15, 14, 13, 12, 11]",
+    "cooldown_text": "15/14/13/12/11"
+  },
+  {
+    "champion": "Warwick",
+    "spell_name": "Infinite Duress",
+    "spell_id": "WarwickR",
+    "cooldown": "[110, 90, 70]",
+    "cooldown_text": "110/90/70"
+  },
+  {
+    "champion": "Xayah",
+    "spell_name": "Double Daggers",
+    "spell_id": "XayahQ",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Xayah",
+    "spell_name": "Deadly Plumage",
+    "spell_id": "XayahW",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Xayah",
+    "spell_name": "Bladecaller",
+    "spell_id": "XayahE",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Xayah",
+    "spell_name": "Featherstorm",
+    "spell_id": "XayahR",
+    "cooldown": "[140, 120, 100]",
+    "cooldown_text": "140/120/100"
+  },
+  {
+    "champion": "Xerath",
+    "spell_name": "Arcanopulse",
+    "spell_id": "XerathArcanopulseChargeUp",
+    "cooldown": "[9, 8, 7, 6, 5]",
+    "cooldown_text": "9/8/7/6/5"
+  },
+  {
+    "champion": "Xerath",
+    "spell_name": "Eye of Destruction",
+    "spell_id": "XerathArcaneBarrage2",
+    "cooldown": "[14, 13, 12, 11, 10]",
+    "cooldown_text": "14/13/12/11/10"
+  },
+  {
+    "champion": "Xerath",
+    "spell_name": "Shocking Orb",
+    "spell_id": "XerathMageSpear",
+    "cooldown": "[13, 12.5, 12, 11.5, 11]",
+    "cooldown_text": "13/12.5/12/11.5/11"
+  },
+  {
+    "champion": "Xerath",
+    "spell_name": "Rite of the Arcane",
+    "spell_id": "XerathLocusOfPower2",
+    "cooldown": "[130, 115, 100]",
+    "cooldown_text": "130/115/100"
+  },
+  {
+    "champion": "XinZhao",
+    "spell_name": "Three Talon Strike",
+    "spell_id": "XinZhaoQ",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "XinZhao",
+    "spell_name": "Wind Becomes Lightning",
+    "spell_id": "XinZhaoW",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "XinZhao",
+    "spell_name": "Audacious Charge",
+    "spell_id": "XinZhaoE",
+    "cooldown": "[11, 11, 11, 11, 11]",
+    "cooldown_text": "11"
+  },
+  {
+    "champion": "XinZhao",
+    "spell_name": "Crescent Guard",
+    "spell_id": "XinZhaoR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Yasuo",
+    "spell_name": "Steel Tempest",
+    "spell_id": "YasuoQ1Wrapper",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Yasuo",
+    "spell_name": "Wind Wall",
+    "spell_id": "YasuoW",
+    "cooldown": "[25, 23, 21, 19, 17]",
+    "cooldown_text": "25/23/21/19/17"
+  },
+  {
+    "champion": "Yasuo",
+    "spell_name": "Sweeping Blade",
+    "spell_id": "YasuoE",
+    "cooldown": "[0.5, 0.4, 0.3, 0.2, 0.1]",
+    "cooldown_text": "0.5/0.4/0.3/0.2/0.1"
+  },
+  {
+    "champion": "Yasuo",
+    "spell_name": "Last Breath",
+    "spell_id": "YasuoR",
+    "cooldown": "[70, 50, 30]",
+    "cooldown_text": "70/50/30"
+  },
+  {
+    "champion": "Yone",
+    "spell_name": "Mortal Steel",
+    "spell_id": "YoneQ",
+    "cooldown": "[4, 4, 4, 4, 4]",
+    "cooldown_text": "4"
+  },
+  {
+    "champion": "Yone",
+    "spell_name": "Spirit Cleave",
+    "spell_id": "YoneW",
+    "cooldown": "[14, 14, 14, 14, 14]",
+    "cooldown_text": "14"
+  },
+  {
+    "champion": "Yone",
+    "spell_name": "Soul Unbound",
+    "spell_id": "YoneE",
+    "cooldown": "[22, 19, 16, 13, 10]",
+    "cooldown_text": "22/19/16/13/10"
+  },
+  {
+    "champion": "Yone",
+    "spell_name": "Fate Sealed",
+    "spell_id": "YoneR",
+    "cooldown": "[120, 100, 80]",
+    "cooldown_text": "120/100/80"
+  },
+  {
+    "champion": "Yorick",
+    "spell_name": "Last Rites",
+    "spell_id": "YorickQ",
+    "cooldown": "[6, 5.5, 5, 4.5, 4]",
+    "cooldown_text": "6/5.5/5/4.5/4"
+  },
+  {
+    "champion": "Yorick",
+    "spell_name": "Dark Procession",
+    "spell_id": "YorickW",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Yorick",
+    "spell_name": "Mourning Mist",
+    "spell_id": "YorickE",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Yorick",
+    "spell_name": "Eulogy of the Isles",
+    "spell_id": "YorickR",
+    "cooldown": "[160, 130, 100]",
+    "cooldown_text": "160/130/100"
+  },
+  {
+    "champion": "Yunara",
+    "spell_name": "Cultivation of Spirit",
+    "spell_id": "YunaraQ",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Yunara",
+    "spell_name": "Arc of Judgment | Arc of Ruin",
+    "spell_id": "YunaraW",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Yunara",
+    "spell_name": "Kanmei's Steps | Untouchable Shadow",
+    "spell_id": "YunaraE",
+    "cooldown": "[9, 9, 9, 9, 9]",
+    "cooldown_text": "9"
+  },
+  {
+    "champion": "Yunara",
+    "spell_name": "Transcend One's Self",
+    "spell_id": "YunaraR",
+    "cooldown": "[100, 90, 80]",
+    "cooldown_text": "100/90/80"
+  },
+  {
+    "champion": "Yuumi",
+    "spell_name": "Prowling Projectile",
+    "spell_id": "YuumiQ",
+    "cooldown": "[6.5, 6.5, 6.5, 6.5, 6.5, 6.5]",
+    "cooldown_text": "6.5"
+  },
+  {
+    "champion": "Yuumi",
+    "spell_name": "You and Me!",
+    "spell_id": "YuumiW",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Yuumi",
+    "spell_name": "Zoomies",
+    "spell_id": "YuumiE",
+    "cooldown": "[10, 10, 10, 10, 10]",
+    "cooldown_text": "10"
+  },
+  {
+    "champion": "Yuumi",
+    "spell_name": "Final Chapter",
+    "spell_id": "YuumiR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Zac",
+    "spell_name": "Stretching Strikes",
+    "spell_id": "ZacQ",
+    "cooldown": "[14, 12.5, 11, 9.5, 8]",
+    "cooldown_text": "14/12.5/11/9.5/8"
+  },
+  {
+    "champion": "Zac",
+    "spell_name": "Unstable Matter",
+    "spell_id": "ZacW",
+    "cooldown": "[5, 5, 5, 5, 5]",
+    "cooldown_text": "5"
+  },
+  {
+    "champion": "Zac",
+    "spell_name": "Elastic Slingshot",
+    "spell_id": "ZacE",
+    "cooldown": "[22, 19, 16, 13, 10]",
+    "cooldown_text": "22/19/16/13/10"
+  },
+  {
+    "champion": "Zac",
+    "spell_name": "Let's Bounce!",
+    "spell_id": "ZacR",
+    "cooldown": "[120, 105, 90]",
+    "cooldown_text": "120/105/90"
+  },
+  {
+    "champion": "Zed",
+    "spell_name": "Razor Shuriken",
+    "spell_id": "ZedQ",
+    "cooldown": "[6, 6, 6, 6, 6]",
+    "cooldown_text": "6"
+  },
+  {
+    "champion": "Zed",
+    "spell_name": "Living Shadow",
+    "spell_id": "ZedW",
+    "cooldown": "[20, 19, 18, 17, 16]",
+    "cooldown_text": "20/19/18/17/16"
+  },
+  {
+    "champion": "Zed",
+    "spell_name": "Shadow Slash",
+    "spell_id": "ZedE",
+    "cooldown": "[5, 4.5, 4, 3.5, 3]",
+    "cooldown_text": "5/4.5/4/3.5/3"
+  },
+  {
+    "champion": "Zed",
+    "spell_name": "Death Mark",
+    "spell_id": "ZedR",
+    "cooldown": "[120, 110, 100]",
+    "cooldown_text": "120/110/100"
+  },
+  {
+    "champion": "Zeri",
+    "spell_name": "Burst Fire",
+    "spell_id": "ZeriQ",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Zeri",
+    "spell_name": "Ultrashock Laser",
+    "spell_id": "ZeriW",
+    "cooldown": "[12, 11, 10, 9, 8]",
+    "cooldown_text": "12/11/10/9/8"
+  },
+  {
+    "champion": "Zeri",
+    "spell_name": "Spark Surge",
+    "spell_id": "ZeriE",
+    "cooldown": "[22, 21, 20, 19, 18]",
+    "cooldown_text": "22/21/20/19/18"
+  },
+  {
+    "champion": "Zeri",
+    "spell_name": "Lightning Crash",
+    "spell_id": "ZeriR",
+    "cooldown": "[80, 75, 70]",
+    "cooldown_text": "80/75/70"
+  },
+  {
+    "champion": "Ziggs",
+    "spell_name": "Bouncing Bomb",
+    "spell_id": "ZiggsQ",
+    "cooldown": "[6, 5.5, 5, 4.5, 4]",
+    "cooldown_text": "6/5.5/5/4.5/4"
+  },
+  {
+    "champion": "Ziggs",
+    "spell_name": "Satchel Charge",
+    "spell_id": "ZiggsW",
+    "cooldown": "[20, 18, 16, 14, 12]",
+    "cooldown_text": "20/18/16/14/12"
+  },
+  {
+    "champion": "Ziggs",
+    "spell_name": "Hexplosive Minefield",
+    "spell_id": "ZiggsE",
+    "cooldown": "[16, 16, 16, 16, 16]",
+    "cooldown_text": "16"
+  },
+  {
+    "champion": "Ziggs",
+    "spell_name": "Mega Inferno Bomb",
+    "spell_id": "ZiggsR",
+    "cooldown": "[120, 95, 70]",
+    "cooldown_text": "120/95/70"
+  },
+  {
+    "champion": "Zilean",
+    "spell_name": "Time Bomb",
+    "spell_id": "ZileanQ",
+    "cooldown": "[10, 9.5, 9, 8.5, 8]",
+    "cooldown_text": "10/9.5/9/8.5/8"
+  },
+  {
+    "champion": "Zilean",
+    "spell_name": "Rewind",
+    "spell_id": "ZileanW",
+    "cooldown": "[14, 12, 10, 8, 6]",
+    "cooldown_text": "14/12/10/8/6"
+  },
+  {
+    "champion": "Zilean",
+    "spell_name": "Time Warp",
+    "spell_id": "TimeWarp",
+    "cooldown": "[15, 15, 15, 15, 15]",
+    "cooldown_text": "15"
+  },
+  {
+    "champion": "Zilean",
+    "spell_name": "Chronoshift",
+    "spell_id": "ChronoShift",
+    "cooldown": "[120, 90, 60]",
+    "cooldown_text": "120/90/60"
+  },
+  {
+    "champion": "Zoe",
+    "spell_name": "Paddle Star!",
+    "spell_id": "ZoeQ",
+    "cooldown": "[8.5, 8, 7.5, 7, 6.5]",
+    "cooldown_text": "8.5/8/7.5/7/6.5"
+  },
+  {
+    "champion": "Zoe",
+    "spell_name": "Spell Thief",
+    "spell_id": "ZoeW",
+    "cooldown": "[0.25, 0.25, 0.25, 0.25, 0.25]",
+    "cooldown_text": "0.25"
+  },
+  {
+    "champion": "Zoe",
+    "spell_name": "Sleepy Trouble Bubble",
+    "spell_id": "ZoeE",
+    "cooldown": "[16, 15, 14, 13, 12]",
+    "cooldown_text": "16/15/14/13/12"
+  },
+  {
+    "champion": "Zoe",
+    "spell_name": "Portal Jump",
+    "spell_id": "ZoeR",
+    "cooldown": "[11, 8, 5]",
+    "cooldown_text": "11/8/5"
+  },
+  {
+    "champion": "Zyra",
+    "spell_name": "Deadly Spines",
+    "spell_id": "ZyraQ",
+    "cooldown": "[7, 6.5, 6, 5.5, 5]",
+    "cooldown_text": "7/6.5/6/5.5/5"
+  },
+  {
+    "champion": "Zyra",
+    "spell_name": "Rampant Growth",
+    "spell_id": "ZyraW",
+    "cooldown": "[0, 0, 0, 0, 0]",
+    "cooldown_text": "0"
+  },
+  {
+    "champion": "Zyra",
+    "spell_name": "Grasping Roots",
+    "spell_id": "ZyraE",
+    "cooldown": "[11, 11, 11, 11, 11]",
+    "cooldown_text": "11"
+  },
+  {
+    "champion": "Zyra",
+    "spell_name": "Stranglethorns",
+    "spell_id": "ZyraR",
+    "cooldown": "[110, 100, 90]",
+    "cooldown_text": "110/100/90"
+  }
+]
