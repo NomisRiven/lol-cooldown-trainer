@@ -106,7 +106,7 @@ function SpellQuiz() {
             <span className="stat-value">{score}</span>
           </div>
           <div className="stat">
-            <span className="stat-label">Série 🔥</span>
+            <span className="stat-label">Serie 🔥</span>
             <span className="stat-value">{streak}</span>
           </div>
           <div className="stat">
