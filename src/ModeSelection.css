@@ -1,0 +1,98 @@
+.mode-selection {
+    min-height: 100vh;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .mode-selection h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .filter-section {
+    margin-bottom: 40px;
+  }
+  
+  .filter-section h2 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .role-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .option-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .role-btn,
+  .option-btn {
+    background: #0a0a0a;
+    border: 1px solid #222;
+    color: #666;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 400;
+  }
+  
+  .role-btn.selected,
+  .option-btn.selected {
+    background: #1a1a1a;
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .role-btn:active,
+  .option-btn:active {
+    transform: scale(0.97);
+  }
+  
+  .hint {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .start-btn {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.2s;
+  }
+  
+  .start-btn:active {
+    transform: scale(0.98);
+  }
+
+  .loading-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    color: #666;
+  }

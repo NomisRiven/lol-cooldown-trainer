@@ -1,0 +1,135 @@
+import { useState } from 'react';
+import { useChampionRoles } from './useChampionRoles';
+import './ModeSelection.css';
+
+function ModeSelection({ onModeSelect }) {
+  const [selectedRoles, setSelectedRoles] = useState([]);
+  const [spellType, setSpellType] = useState('all');
+  const [learningMode, setLearningMode] = useState('all-levels');
+  
+  const { championRoles, loading } = useChampionRoles();
+  // Ajoute ça juste après le useChampionRoles()
+console.log('Champion Roles:', championRoles);
+console.log('Loading:', loading);
+
+// Et pour voir les champions par rôle, ajoute ça aussi
+if (championRoles) {
+  console.log('Top champions:', Object.entries(championRoles)
+    .filter(([champ, roles]) => roles.includes('top'))
+    .map(([champ]) => champ)
+  );
+  
+  console.log('Jungle champions:', Object.entries(championRoles)
+    .filter(([champ, roles]) => roles.includes('jungle'))
+    .map(([champ]) => champ)
+  );
+}
+
+  const roles = [
+    { id: 'top', name: 'Top' },
+    { id: 'jungle', name: 'Jungle' },
+    { id: 'middle', name: 'Mid' },
+    { id: 'bottom', name: 'ADC' },
+    { id: 'utility', name: 'Support' }
+  ];
+
+  const toggleRole = (roleId) => {
+    setSelectedRoles(prev => 
+      prev.includes(roleId) 
+        ? prev.filter(r => r !== roleId)
+        : [...prev, roleId]
+    );
+  };
+
+  const handleStart = () => {
+    onModeSelect({
+      roles: selectedRoles,
+      spellType,
+      learningMode,
+      championRoles
+    });
+  };
+
+  if (loading) {
+    return (
+      <div className="mode-selection">
+        <div className="loading-text">Loading champion data...</div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mode-selection">
+      <h1>Cooldown Trainer</h1>
+
+      <div className="filter-section">
+        <h2>Roles</h2>
+        <div className="role-grid">
+          {roles.map(role => (
+            <button
+              key={role.id}
+              className={`role-btn ${selectedRoles.includes(role.id) ? 'selected' : ''}`}
+              onClick={() => toggleRole(role.id)}
+            >
+              {role.name}
+            </button>
+          ))}
+        </div>
+        {selectedRoles.length === 0 && <p className="hint">All roles selected by default</p>}
+      </div>
+
+      <div className="filter-section">
+        <h2>Spell Type</h2>
+        <div className="option-grid">
+          <button
+            className={`option-btn ${spellType === 'all' ? 'selected' : ''}`}
+            onClick={() => setSpellType('all')}
+          >
+            All Spells
+          </button>
+          <button
+            className={`option-btn ${spellType === 'ultimates' ? 'selected' : ''}`}
+            onClick={() => setSpellType('ultimates')}
+          >
+            Ultimates
+          </button>
+          <button
+            className={`option-btn ${spellType === 'basic' ? 'selected' : ''}`}
+            onClick={() => setSpellType('basic')}
+          >
+            Basic (Q/W/E)
+          </button>
+        </div>
+      </div>
+
+      <div className="filter-section">
+        <h2>Learning Mode</h2>
+        <div className="option-grid">
+          <button
+            className={`option-btn ${learningMode === 'all-levels' ? 'selected' : ''}`}
+            onClick={() => setLearningMode('all-levels')}
+          >
+            All Levels
+          </button>
+          <button
+            className={`option-btn ${learningMode === 'single-level' ? 'selected' : ''}`}
+            onClick={() => setLearningMode('single-level')}
+          >
+            Random Level
+          </button>
+        </div>
+        <p className="hint">
+          {learningMode === 'all-levels' 
+            ? 'Practice all 5 levels of each spell in order'
+            : 'Practice one random level per spell, then switch'}
+        </p>
+      </div>
+
+      <button className="start-btn" onClick={handleStart}>
+        Start Training
+      </button>
+    </div>
+  );
+}
+
+export default ModeSelection;
