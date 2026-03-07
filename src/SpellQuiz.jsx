@@ -100,15 +100,48 @@ function SpellQuiz({ mode, onBack }) {
 
   const generateWrongAnswers = (correct) => {
     const wrongs = new Set();
-    const range = correct < 10 ? 3 : 10;
     
-    while (wrongs.size < 3) {
-      const offset = Math.floor(Math.random() * range * 2) - range;
-      const wrong = correct + offset;
-      if (wrong > 0 && wrong !== correct && wrong <= 200) {
-        wrongs.add(wrong.toString());
+    // Déterminer le delta en fonction de la valeur
+    let delta;
+    if (correct <= 5) {
+      delta = 1; // Pour les petits CDs : ±1s
+    } else if (correct <= 15) {
+      delta = 2; // CDs moyens : ±2s
+    } else if (correct <= 30) {
+      delta = 3; // CDs élevés : ±3s
+    } else {
+      delta = 10; // Ults : ±10s
+    }
+    
+    // Générer 3 mauvaises réponses proches
+    const attempts = [];
+    for (let i = -3; i <= 3; i++) {
+      if (i !== 0) {
+        attempts.push(correct + (i * delta));
       }
     }
+    
+    // Mélanger et prendre 3 valeurs valides
+    attempts.sort(() => Math.random() - 0.5);
+    
+    for (const value of attempts) {
+      if (wrongs.size >= 3) break;
+      if (value > 0 && value <= 200) {
+        // Arrondir à 0.5 près pour les décimales
+        const rounded = Math.round(value * 2) / 2;
+        wrongs.add(rounded.toString());
+      }
+    }
+    
+    // Si on n'a pas assez, ajouter des valeurs aléatoires proches
+    while (wrongs.size < 3) {
+      const offset = (Math.random() > 0.5 ? 1 : -1) * delta * (Math.random() * 2 + 1);
+      const value = Math.round((correct + offset) * 2) / 2;
+      if (value > 0 && value !== correct && value <= 200) {
+        wrongs.add(value.toString());
+      }
+    }
+    
     return Array.from(wrongs);
   };
 
