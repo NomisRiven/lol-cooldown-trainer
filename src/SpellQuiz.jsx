@@ -12,6 +12,7 @@ function SpellQuiz({ mode, onBack }) {
   const [feedback, setFeedback] = useState('');
   const [choices, setChoices] = useState([]);
   const [latestVersion, setLatestVersion] = useState('16.5.1');
+  const [currentCDR, setCurrentCDR] = useState(0);
 
   useEffect(() => {
     fetch('https://ddragon.leagueoflegends.com/api/versions.json')
@@ -81,18 +82,36 @@ function SpellQuiz({ mode, onBack }) {
     } else {
       level = 0;
     }
-
+  
+    // Générer un CDR aléatoire si mode CDR activé
+    let cdr = 0;
+    if (mode.cdrMode === 'random') {
+      // Ability Haste entre 0 et 100
+      const abilityHaste = Math.floor(Math.random() * 101);
+      cdr = abilityHaste;
+    }
+  
     setCurrentSpell(randomSpell);
     setCurrentLevel(level);
-    generateChoices(randomSpell, level);
+    setCurrentCDR(cdr);
+    generateChoices(randomSpell, level, cdr);
   };
 
-  const generateChoices = (spell, level) => {
+  const generateChoices = (spell, level, cdr = 0) => {
     const cooldowns = spell.cooldown_text.split('/');
-    const correctAnswer = cooldowns[level];
+    const baseCooldown = parseFloat(cooldowns[level]);
     
-    const wrongAnswers = generateWrongAnswers(parseFloat(correctAnswer));
-    const allChoices = [...wrongAnswers, correctAnswer]
+    // Calculer le CD réel avec Ability Haste
+    // Formule : CD = Base CD × (100 / (100 + Ability Haste))
+    const actualCooldown = cdr > 0 
+      ? baseCooldown * (100 / (100 + cdr))
+      : baseCooldown;
+    
+    // Arrondir à 1 décimale
+    const correctAnswer = Math.round(actualCooldown * 10) / 10;
+    
+    const wrongAnswers = generateWrongAnswers(correctAnswer);
+    const allChoices = [...wrongAnswers, correctAnswer.toString()]
       .sort(() => Math.random() - 0.5);
     
     setChoices(allChoices);
@@ -147,7 +166,13 @@ function SpellQuiz({ mode, onBack }) {
 
   const checkAnswer = (answer) => {
     const cooldowns = currentSpell.cooldown_text.split('/');
-    const correctAnswer = cooldowns[currentLevel];
+    const baseCooldown = parseFloat(cooldowns[currentLevel]);
+    
+    const actualCooldown = currentCDR > 0 
+      ? baseCooldown * (100 / (100 + currentCDR))
+      : baseCooldown;
+    
+    const correctAnswer = (Math.round(actualCooldown * 10) / 10).toString();
     
     if (answer === correctAnswer) {
       setFeedback('✓');
@@ -166,7 +191,14 @@ function SpellQuiz({ mode, onBack }) {
           } else {
             const nextLevel = currentLevel + 1;
             setCurrentLevel(nextLevel);
-            generateChoices(currentSpell, nextLevel);
+            
+            // Générer nouveau CDR pour chaque niveau
+            let newCdr = 0;
+            if (mode.cdrMode === 'random') {
+              newCdr = Math.floor(Math.random() * 101);
+            }
+            setCurrentCDR(newCdr);
+            generateChoices(currentSpell, nextLevel, newCdr);
           }
         }
       }, 600);
@@ -202,6 +234,9 @@ function SpellQuiz({ mode, onBack }) {
             {currentSpell.spell_name} <span className="spell-key">({getSpellKey()})</span>
           </div>
           <div className="level">Level {currentLevel + 1}</div>
+          {currentCDR > 0 && (
+            <div className="cdr-info">{currentCDR} Ability Haste</div>
+          )}
         </div>
       </div>
 

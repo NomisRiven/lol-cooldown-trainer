@@ -6,6 +6,7 @@ function ModeSelection({ onModeSelect }) {
   const [selectedRoles, setSelectedRoles] = useState([]);
   const [spellType, setSpellType] = useState('all');
   const [learningMode, setLearningMode] = useState('all-levels');
+  const [cdrMode, setCdrMode] = useState('none');
   
   const { championRoles, loading } = useChampionRoles();
   // Ajoute ça juste après le useChampionRoles()
@@ -46,6 +47,7 @@ if (championRoles) {
       roles: selectedRoles,
       spellType,
       learningMode,
+      cdrMode,
       championRoles
     });
   };
@@ -117,6 +119,28 @@ if (championRoles) {
           >
             Random Level
           </button>
+        </div>
+        <div className="filter-section">
+          <h2>CDR Challenge</h2>
+          <div className="option-grid">
+            <button
+              className={`option-btn ${cdrMode === 'none' ? 'selected' : ''}`}
+              onClick={() => setCdrMode('none')}
+            >
+              No CDR
+            </button>
+            <button
+              className={`option-btn ${cdrMode === 'random' ? 'selected' : ''}`}
+              onClick={() => setCdrMode('random')}
+            >
+              With CDR
+            </button>
+          </div>
+          <p className="hint">
+            {cdrMode === 'none' 
+              ? 'Base cooldowns only'
+              : 'Calculate cooldowns with random Ability Haste (0-100)'}
+          </p>
         </div>
         <p className="hint">
           {learningMode === 'all-levels' 
