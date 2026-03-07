@@ -139,7 +139,7 @@ if (championRoles) {
           <p className="hint">
             {cdrMode === 'none' 
               ? 'Base cooldowns only'
-              : 'Calculate cooldowns with random Ability Haste (0-100)'}
+              : 'Calculate cooldowns with random Ability Haste (0-40)'}
           </p>
         </div>
         <p className="hint">
