@@ -87,7 +87,8 @@ function SpellQuiz({ mode, onBack }) {
     let cdr = 0;
     if (mode.cdrMode === 'random') {
       // Ability Haste entre 0 et 100
-      const abilityHaste = Math.floor(Math.random() * 41);
+      const possibleCDR = [0, 10, 20, 30, 40, 50];
+      const abilityHaste = possibleCDR[Math.floor(Math.random() * possibleCDR.length)];
       cdr = abilityHaste;
     }
   
@@ -195,7 +196,8 @@ function SpellQuiz({ mode, onBack }) {
             // Générer nouveau CDR pour chaque niveau
             let newCdr = 0;
             if (mode.cdrMode === 'random') {
-              newCdr = Math.floor(Math.random() * 41);
+              const possibleCDR = [0, 10, 20, 30, 40, 50];
+              newCdr = possibleCDR[Math.floor(Math.random() * possibleCDR.length)];
             }
             setCurrentCDR(newCdr);
             generateChoices(currentSpell, nextLevel, newCdr);
