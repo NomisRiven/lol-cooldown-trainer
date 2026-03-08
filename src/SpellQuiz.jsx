@@ -103,13 +103,19 @@ function SpellQuiz({ mode, onBack }) {
     const baseCooldown = parseFloat(cooldowns[level]);
     
     // Calculer le CD réel avec Ability Haste
-    // Formule : CD = Base CD × (100 / (100 + Ability Haste))
     const actualCooldown = cdr > 0 
       ? baseCooldown * (100 / (100 + cdr))
       : baseCooldown;
     
-    // Arrondir à 1 décimale
-    const correctAnswer = Math.round(actualCooldown * 10) / 10;
+    // Arrondir de manière cohérente
+    let correctAnswer;
+    if (actualCooldown < 1) {
+      correctAnswer = Math.round(actualCooldown * 4) / 4;
+    } else if (actualCooldown < 10) {
+      correctAnswer = Math.round(actualCooldown * 2) / 2;
+    } else {
+      correctAnswer = Math.round(actualCooldown);
+    }
     
     const wrongAnswers = generateWrongAnswers(correctAnswer);
     const allChoices = [...wrongAnswers, correctAnswer.toString()]
@@ -121,45 +127,70 @@ function SpellQuiz({ mode, onBack }) {
   const generateWrongAnswers = (correct) => {
     const wrongs = new Set();
     
-    // Déterminer le delta en fonction de la valeur
-    let delta;
-    if (correct <= 5) {
-      delta = 1; // Pour les petits CDs : ±1s
-    } else if (correct <= 15) {
-      delta = 2; // CDs moyens : ±2s
-    } else if (correct <= 30) {
-      delta = 3; // CDs élevés : ±3s
+    // Arrondir la réponse correcte de manière cohérente
+    // Les CDs LoL sont généralement en entiers ou .5
+    let roundedCorrect = correct;
+    if (correct < 1) {
+      roundedCorrect = Math.round(correct * 4) / 4; // Arrondi au 0.25 près pour les très petits
+    } else if (correct < 10) {
+      roundedCorrect = Math.round(correct * 2) / 2; // Arrondi au 0.5 près
     } else {
-      delta = 10; // Ults : ±10s
+      roundedCorrect = Math.round(correct); // Arrondi à l'entier
     }
     
-    // Générer 3 mauvaises réponses proches
-    const attempts = [];
-    for (let i = -3; i <= 3; i++) {
-      if (i !== 0) {
-        attempts.push(correct + (i * delta));
-      }
+    // Déterminer le delta et le type d'arrondi
+    let delta, roundFn;
+    if (roundedCorrect < 3) {
+      delta = 0.5;
+      roundFn = (v) => Math.round(v * 4) / 4; // 0.25 près
+    } else if (roundedCorrect < 6) {
+      delta = 0.5;
+      roundFn = (v) => Math.round(v * 2) / 2; // 0.5 près
+    } else if (roundedCorrect < 10) {
+      delta = 1;
+      roundFn = (v) => Math.round(v * 2) / 2; // 0.5 près
+    } else if (roundedCorrect < 20) {
+      delta = 2;
+      roundFn = (v) => Math.round(v); // Entier
+    } else if (roundedCorrect < 40) {
+      delta = 3;
+      roundFn = (v) => Math.round(v); // Entier
+    } else {
+      delta = 10;
+      roundFn = (v) => Math.round(v); // Entier
     }
     
-    // Mélanger et prendre 3 valeurs valides
-    attempts.sort(() => Math.random() - 0.5);
+    // Générer les mauvaises réponses
+    const candidates = [
+      roundedCorrect - delta * 2,
+      roundedCorrect - delta,
+      roundedCorrect + delta,
+      roundedCorrect + delta * 2,
+      roundedCorrect - delta * 1.5,
+      roundedCorrect + delta * 1.5
+    ];
     
-    for (const value of attempts) {
+    for (const value of candidates) {
       if (wrongs.size >= 3) break;
-      if (value > 0 && value <= 200) {
-        // Arrondir à 0.5 près pour les décimales
-        const rounded = Math.round(value * 2) / 2;
+      
+      const rounded = roundFn(value);
+      
+      // Vérifier que c'est valide (>0.5 minimum, pas égal à la réponse)
+      if (rounded >= 0.5 && rounded <= 200 && rounded !== roundedCorrect) {
         wrongs.add(rounded.toString());
       }
     }
     
-    // Si on n'a pas assez, ajouter des valeurs aléatoires proches
-    while (wrongs.size < 3) {
-      const offset = (Math.random() > 0.5 ? 1 : -1) * delta * (Math.random() * 2 + 1);
-      const value = Math.round((correct + offset) * 2) / 2;
-      if (value > 0 && value !== correct && value <= 200) {
+    // Si pas assez de réponses, en générer aléatoirement
+    let attempts = 0;
+    while (wrongs.size < 3 && attempts < 20) {
+      const offset = (Math.random() > 0.5 ? 1 : -1) * delta * (Math.random() + 0.5);
+      const value = roundFn(roundedCorrect + offset);
+      
+      if (value >= 0.5 && value <= 200 && value !== roundedCorrect) {
         wrongs.add(value.toString());
       }
+      attempts++;
     }
     
     return Array.from(wrongs);
@@ -173,9 +204,19 @@ function SpellQuiz({ mode, onBack }) {
       ? baseCooldown * (100 / (100 + currentCDR))
       : baseCooldown;
     
-    const correctAnswer = (Math.round(actualCooldown * 10) / 10).toString();
+    // Même arrondi que generateChoices
+    let correctAnswer;
+    if (actualCooldown < 1) {
+      correctAnswer = Math.round(actualCooldown * 4) / 4;
+    } else if (actualCooldown < 10) {
+      correctAnswer = Math.round(actualCooldown * 2) / 2;
+    } else {
+      correctAnswer = Math.round(actualCooldown);
+    }
     
-    if (answer === correctAnswer) {
+    const correctAnswerStr = correctAnswer.toString();
+    
+    if (answer === correctAnswerStr) {
       setFeedback('✓');
       setScore(score + 1);
       setStreak(streak + 1);
