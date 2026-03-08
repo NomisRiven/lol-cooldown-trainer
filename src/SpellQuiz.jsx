@@ -127,67 +127,67 @@ function SpellQuiz({ mode, onBack }) {
   const generateWrongAnswers = (correct) => {
     const wrongs = new Set();
     
-    // Arrondir la réponse correcte de manière cohérente
-    // Les CDs LoL sont généralement en entiers ou .5
-    let roundedCorrect = correct;
-    if (correct < 1) {
-      roundedCorrect = Math.round(correct * 4) / 4; // Arrondi au 0.25 près pour les très petits
-    } else if (correct < 10) {
-      roundedCorrect = Math.round(correct * 2) / 2; // Arrondi au 0.5 près
-    } else {
-      roundedCorrect = Math.round(correct); // Arrondi à l'entier
-    }
-    
-    // Déterminer le delta et le type d'arrondi
+    // Déterminer le delta et le type d'arrondi selon la plage
     let delta, roundFn;
-    if (roundedCorrect < 3) {
+    if (correct < 3) {
       delta = 0.5;
-      roundFn = (v) => Math.round(v * 4) / 4; // 0.25 près
-    } else if (roundedCorrect < 6) {
+      roundFn = (v) => Math.round(v * 4) / 4;
+    } else if (correct < 6) {
       delta = 0.5;
-      roundFn = (v) => Math.round(v * 2) / 2; // 0.5 près
-    } else if (roundedCorrect < 10) {
+      roundFn = (v) => Math.round(v * 2) / 2;
+    } else if (correct < 10) {
       delta = 1;
-      roundFn = (v) => Math.round(v * 2) / 2; // 0.5 près
-    } else if (roundedCorrect < 20) {
-      delta = 2;
-      roundFn = (v) => Math.round(v); // Entier
-    } else if (roundedCorrect < 40) {
+      roundFn = (v) => Math.round(v * 2) / 2;
+    } else if (correct < 20) {
+      delta = 1.5; // Plus petit delta pour cette plage
+      roundFn = (v) => Math.round(v * 2) / 2;
+    } else if (correct < 40) {
       delta = 3;
-      roundFn = (v) => Math.round(v); // Entier
+      roundFn = (v) => Math.round(v);
     } else {
       delta = 10;
-      roundFn = (v) => Math.round(v); // Entier
+      roundFn = (v) => Math.round(v);
     }
     
-    // Générer les mauvaises réponses
+    // Générer 6 candidats proches
     const candidates = [
-      roundedCorrect - delta * 2,
-      roundedCorrect - delta,
-      roundedCorrect + delta,
-      roundedCorrect + delta * 2,
-      roundedCorrect - delta * 1.5,
-      roundedCorrect + delta * 1.5
+      correct - delta * 2,
+      correct - delta,
+      correct + delta,
+      correct + delta * 2,
     ];
+    
+    // Mélanger et filtrer
+    candidates.sort(() => Math.random() - 0.5);
     
     for (const value of candidates) {
       if (wrongs.size >= 3) break;
       
       const rounded = roundFn(value);
       
-      // Vérifier que c'est valide (>0.5 minimum, pas égal à la réponse)
-      if (rounded >= 0.5 && rounded <= 200 && rounded !== roundedCorrect) {
+      // Vérifier que c'est dans une plage raisonnable (pas trop loin de correct)
+      const percentDiff = Math.abs((rounded - correct) / correct);
+      
+      if (rounded >= 0.5 && 
+          rounded <= 200 && 
+          rounded !== correct && 
+          percentDiff <= 0.35) { // Max 35% de différence
         wrongs.add(rounded.toString());
       }
     }
     
-    // Si pas assez de réponses, en générer aléatoirement
+    // Si pas assez, générer des valeurs plus proches
     let attempts = 0;
-    while (wrongs.size < 3 && attempts < 20) {
-      const offset = (Math.random() > 0.5 ? 1 : -1) * delta * (Math.random() + 0.5);
-      const value = roundFn(roundedCorrect + offset);
+    while (wrongs.size < 3 && attempts < 30) {
+      const offset = (Math.random() > 0.5 ? 1 : -1) * delta * (Math.random() * 1.5 + 0.5);
+      const value = roundFn(correct + offset);
+      const percentDiff = Math.abs((value - correct) / correct);
       
-      if (value >= 0.5 && value <= 200 && value !== roundedCorrect) {
+      if (value >= 0.5 && 
+          value <= 200 && 
+          value !== correct && 
+          percentDiff <= 0.35 &&
+          !wrongs.has(value.toString())) {
         wrongs.add(value.toString());
       }
       attempts++;
