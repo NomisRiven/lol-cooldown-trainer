@@ -1,0 +1,64 @@
+.summoner-timer {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .summoner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+  
+  .summoner-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  
+  .summoner-text {
+    text-align: center;
+  }
+  
+  .summoner-name {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .cooldown-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+  
+  .highlight {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .prompt {
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+  }
+  
+  .summoner-timer.shake {
+    animation: screenShake 0.6s ease;
+  }

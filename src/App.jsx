@@ -3,7 +3,8 @@ import './App.css';
 import GameModeSelection from './GameModeSelection';
 import ModeSelection from './ModeSelection';
 import SpellQuiz from './SpellQuiz';
-// TODO: créer SummonerTimer plus tard
+import SummonerTimer from './SummonerTimer';
+
 
 function App() {
   const [gameMode, setGameMode] = useState(null);
@@ -37,10 +38,7 @@ function App() {
             onBack={handleBackToMain}
           />
         ) : (
-          <div className="coming-soon">
-            <button className="back-btn" onClick={handleBackToMain}>←</button>
-            <p>Summoner Timer (coming soon)</p>
-          </div>
+          <SummonerTimer onBack={handleBackToMain} />
         )
       ) : (
         <SpellQuiz mode={quizMode} onBack={handleBackToGameMode} />
