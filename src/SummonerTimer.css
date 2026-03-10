@@ -37,7 +37,37 @@
   .cooldown-info {
     font-size: 14px;
     color: #666;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    user-select: none;
+  }
+  
+  .cooldown-info.blurred {
+    filter: blur(8px);
+    color: #444;
+  }
+  
+  .cooldown-info.blurred:hover {
+    filter: blur(6px);
+  }
+  
+  .haste-info {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .haste-badge {
+    background: #1a1a2e;
+    border: 1px solid #4a4a6a;
+    color: #8B9DC3;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
   }
   
   .question {
