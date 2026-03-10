@@ -19,6 +19,14 @@ function SpellQuiz({ mode, onBack }) {
 
 
   useEffect(() => {
+    if ('vibrate' in navigator) {
+      // Test vibration au chargement
+      const testVibration = () => {
+        navigator.vibrate(1);
+      };
+      // Premier clic active la permission
+      document.addEventListener('click', testVibration, { once: true });
+    }
     fetch('https://ddragon.leagueoflegends.com/api/versions.json')
       .then(res => res.json())
       .then(versions => setLatestVersion(versions[0]))
