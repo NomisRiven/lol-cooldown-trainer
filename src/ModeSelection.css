@@ -1,17 +1,23 @@
 .mode-selection {
-  position: relative; /* AJOUTE CETTE LIGNE */
+  position: relative;
   min-height: 100vh;
-  padding: 40px 20px;
+  min-height: 100dvh; /* Dynamic viewport pour mobile */
+  padding: 80px 20px 40px; /* Plus de padding en haut pour le bouton */
   max-width: 600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrer verticalement */
 }
   
-  .mode-selection h1 {
-    font-size: 28px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    text-align: center;
-  }
+.mode-selection h1 {
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
   
   .filter-section {
     margin-bottom: 40px;
@@ -129,7 +135,7 @@
   }
 
   .back-btn-top {
-    position: absolute;
+    position: fixed; /* Fixed au lieu d'absolute */
     top: 20px;
     left: 20px;
     background: none;
@@ -140,7 +146,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s;
-    z-index: 10; /* Ajoute aussi ça pour être sûr qu'il soit au-dessus */
+    z-index: 10;
   }
   
   .back-btn-top:hover {

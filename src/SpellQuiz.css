@@ -1,8 +1,10 @@
 .quiz {
   min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport pour mobile */
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Centrer verticalement */
   max-width: 500px;
   margin: 0 auto;
 }
