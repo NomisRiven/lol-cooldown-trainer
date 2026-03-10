@@ -25,7 +25,9 @@
     letter-spacing: 1px;
     font-weight: 500;
   }
-  
+  .quiz.shake {
+    animation: screenShake 0.6s ease;
+  }
   .role-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

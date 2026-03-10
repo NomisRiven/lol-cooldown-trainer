@@ -92,15 +92,158 @@
   color: #888;
 }
 
+/* Overlay flou en arrière-plan */
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 98;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Container du feedback */
 .feedback {
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 140px;
-  animation: pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 99;
   pointer-events: none;
-  z-index: 100;
+}
+
+/* Texte du feedback */
+.feedback-text {
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-shadow: 0 0 20px currentColor;
+}
+
+/* Feedback correct (vert) */
+.feedback.correct .feedback-text {
+  color: #4CAF50;
+  animation: popCorrect 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes popCorrect {
+  0% { 
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Feedback incorrect (rouge + shake) */
+.feedback.wrong .feedback-text {
+  color: #f44336;
+  animation: shake 0.6s ease;
+}
+
+@keyframes shake {
+  0%, 100% { 
+    transform: translateX(0);
+    opacity: 0;
+  }
+  10% { 
+    transform: translateX(-15px);
+    opacity: 1;
+  }
+  20% { 
+    transform: translateX(15px);
+  }
+  30% { 
+    transform: translateX(-15px);
+  }
+  40% { 
+    transform: translateX(15px);
+  }
+  50% { 
+    transform: translateX(-10px);
+  }
+  60% { 
+    transform: translateX(10px);
+  }
+  70% { 
+    transform: translateX(-5px);
+  }
+  80% { 
+    transform: translateX(5px);
+  }
+  90% { 
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Shake de tout l'écran pour mauvaise réponse */
+.feedback.wrong ~ .quiz {
+  animation: screenShake 0.6s ease;
+}
+
+@keyframes screenShake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Confettis pour bonne réponse */
+.confetti {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+}
+
+.confetti::before,
+.confetti::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: confettiFall 0.8s ease-out forwards;
+}
+
+.confetti::before {
+  background: #4CAF50;
+  left: -50px;
+  animation-delay: 0.1s;
+}
+
+.confetti::after {
+  background: #8BC34A;
+  right: -50px;
+  animation-delay: 0.2s;
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px) rotate(720deg);
+    opacity: 0;
+  }
 }
 
 @keyframes pop {
@@ -173,4 +316,8 @@
   min-height: 100vh;
   font-size: 16px;
   color: #666;
+}
+
+.quiz.shake {
+  animation: screenShake 0.6s ease;
 }

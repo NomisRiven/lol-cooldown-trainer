@@ -15,6 +15,8 @@ function SpellQuiz({ mode, onBack }) {
   const [choices, setChoices] = useState([]);
   const [latestVersion, setLatestVersion] = useState('16.5.1');
   const [currentCDR, setCurrentCDR] = useState(0);
+  const [shakeScreen, setShakeScreen] = useState(false);
+
 
   useEffect(() => {
     fetch('https://ddragon.leagueoflegends.com/api/versions.json')
@@ -270,15 +272,19 @@ function SpellQuiz({ mode, onBack }) {
     } else {
       setFeedback('✗');
       setStreak(0);
+      setShakeScreen(true);  // NOUVEAU
       
-      setTimeout(() => setFeedback(''), 600);
+      setTimeout(() => {
+        setFeedback('');
+        setShakeScreen(false);  // NOUVEAU
+      }, 600);
     }
   };
 
   if (!currentSpell) return <div className="loading">Loading...</div>;
 
   return (
-    <div className="quiz">
+    <div className={`quiz ${shakeScreen ? 'shake' : ''}`}>
       <div className="quiz-header">
         <button className="back-btn" onClick={onBack}>←</button>
         <div className="stats">
@@ -305,19 +311,21 @@ function SpellQuiz({ mode, onBack }) {
         </div>
       </div>
 
-      {feedback && <div className="feedback">{feedback}</div>}
-
-      <div className="choices">
-        {choices.map((choice, i) => (
-          <button 
-            key={i}
-            className="choice"
-            onClick={() => checkAnswer(choice)}
-          >
-            {choice}s
-          </button>
-        ))}
-      </div>
+      {feedback && (
+        <>
+          <div className="feedback-overlay"></div>
+          <div className={`feedback ${feedback === '✓' ? 'correct' : 'wrong'}`}>
+            {feedback === '✓' ? (
+              <>
+                <div className="feedback-text">CORRECT</div>
+                <div className="confetti"></div>
+              </>
+            ) : (
+              <div className="feedback-text">WRONG</div>
+            )}
+          </div>
+        </>
+      )}
 
       <input 
         className="input"
