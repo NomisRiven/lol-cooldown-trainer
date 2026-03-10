@@ -21,7 +21,7 @@ function ModeSelection({ onModeSelect, onBack }) {
     { id: 'Top', name: 'Top' },
     { id: 'Jgl', name: 'Jungle' },
     { id: 'Mid', name: 'Mid' },
-    { id: 'ADC', name: 'ADC' },
+    { id: 'Adc', name: 'ADC' },      // CHANGE: "Adc" au lieu de "ADC"
     { id: 'Sup', name: 'Support' }
   ];
 
