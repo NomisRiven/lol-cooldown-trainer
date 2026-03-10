@@ -23,9 +23,9 @@ export const gameConfig = {
       { id: 'smite', name: 'Smite', cooldown: 90, image: 'SummonerSmite.png' },
       { id: 'heal', name: 'Heal', cooldown: 240, image: 'SummonerHeal.png' },
       { id: 'barrier', name: 'Barrier', cooldown: 180, image: 'SummonerBarrier.png' },
-      { id: 'exhaust', name: 'Exhaust', cooldown: 210, image: 'SummonerExhaust.png' },
-      { id: 'ghost', name: 'Ghost', cooldown: 210, image: 'SummonerHaste.png' },
-      { id: 'cleanse', name: 'Cleanse', cooldown: 210, image: 'SummonerBoost.png' },
+      { id: 'exhaust', name: 'Exhaust', cooldown: 240, image: 'SummonerExhaust.png' },
+      { id: 'ghost', name: 'Ghost', cooldown: 240, image: 'SummonerHaste.png' },
+      { id: 'cleanse', name: 'Cleanse', cooldown: 240, image: 'SummonerBoost.png' },
     ],
   
     // Seuil pour "big cooldowns"

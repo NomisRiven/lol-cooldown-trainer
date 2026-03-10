@@ -87,7 +87,8 @@ function SummonerTimer({ onBack }) {
   const generateChoices = (summoner, timeUsed, haste) => {
     const correctAnswer = calculateReturnTime(timeUsed, summoner.cooldown, haste);
     
-    const wrongOffsets = [-90, -60, -30, 30, 60, 90];
+    // Offsets POSITIFS uniquement (après le temps correct)
+    const wrongOffsets = [15, 30, 45, 60, 90, 120]; // Seulement +
     const wrongAnswers = new Set();
     
     wrongOffsets.sort(() => Math.random() - 0.5);
@@ -97,9 +98,9 @@ function SummonerTimer({ onBack }) {
       
       const [minutes, seconds] = timeUsed.split(':').map(Number);
       const actualCooldown = Math.round(hasteCooldowns[haste][summoner.cooldown] || summoner.cooldown);
-      const totalSeconds = minutes * 60 + seconds + actualCooldown + offset;
+      const totalSeconds = minutes * 60 + seconds + actualCooldown + offset; // SEULEMENT +offset
       
-      if (totalSeconds >= 0 && totalSeconds <= 3600) {
+      if (totalSeconds <= 3600) { // Max 60 minutes
         const wrongMinutes = Math.floor(totalSeconds / 60);
         const wrongSeconds = totalSeconds % 60;
         const wrongTime = `${wrongMinutes}:${wrongSeconds.toString().padStart(2, '0')}`;
@@ -167,8 +168,8 @@ function SummonerTimer({ onBack }) {
 
   if (!currentSummoner) return <div className="loading">Loading...</div>;
 
-  const actualCooldown = Math.round(hasteCooldowns[currentHaste][currentSummoner.cooldown]);
-
+  const actualCooldown = Math.round(hasteCooldowns[currentHaste][currentSummoner.cooldown] || currentSummoner.cooldown);
+  
   return (
     <div className={`summoner-timer ${shakeScreen ? 'shake' : ''}`}>
       <div className="quiz-header">
