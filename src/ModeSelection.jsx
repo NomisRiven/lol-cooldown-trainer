@@ -1,12 +1,19 @@
 import { useState } from 'react';
 import { useChampionRoles } from './useChampionRoles';
 import './ModeSelection.css';
+import { gameConfig } from './gameConfig';
+
 
 function ModeSelection({ onModeSelect }) {
   const [selectedRoles, setSelectedRoles] = useState([]);
   const [spellType, setSpellType] = useState('all');
   const [learningMode, setLearningMode] = useState('all-levels');
   const [cdrMode, setCdrMode] = useState('none');
+  const [customFilters, setCustomFilters] = useState({
+    famousUltimates: false,
+    bigCooldowns: false,
+    metaOnly: false
+  });
   
   const { championRoles, loading } = useChampionRoles();
   // Ajoute ça juste après le useChampionRoles()
@@ -48,6 +55,7 @@ if (championRoles) {
       spellType,
       learningMode,
       cdrMode,
+      customFilters,
       championRoles
     });
   };
@@ -103,7 +111,47 @@ if (championRoles) {
           </button>
         </div>
       </div>
-
+          <div className="filter-section">
+      <h2>Custom Filters</h2>
+      <div className="toggle-filters">
+        <button
+          className={`filter-toggle ${customFilters.famousUltimates ? 'active' : ''}`}
+          onClick={() => setCustomFilters(prev => ({
+            ...prev,
+            famousUltimates: !prev.famousUltimates
+          }))}
+        >
+          Famous Ultimates ⭐
+        </button>
+        <button
+          className={`filter-toggle ${customFilters.bigCooldowns ? 'active' : ''}`}
+          onClick={() => setCustomFilters(prev => ({
+            ...prev,
+            bigCooldowns: !prev.bigCooldowns
+          }))}
+        >
+          Big Cooldowns (50s+) 🕐
+        </button>
+        <button
+          className={`filter-toggle ${customFilters.metaOnly ? 'active' : ''}`}
+          onClick={() => setCustomFilters(prev => ({
+            ...prev,
+            metaOnly: !prev.metaOnly
+          }))}
+        >
+          Meta Champions 🔥
+        </button>
+      </div>
+      {customFilters.famousUltimates && (
+        <p className="hint">Only famous game-changing ultimates</p>
+      )}
+      {customFilters.bigCooldowns && (
+        <p className="hint">Cooldowns above {gameConfig.bigCooldownThreshold} seconds</p>
+      )}
+      {customFilters.metaOnly && (
+        <p className="hint">Current patch meta champions only</p>
+      )}
+    </div>
       <div className="filter-section">
         <h2>Learning Mode</h2>
         <div className="option-grid">

@@ -1,17 +1,42 @@
 import { useState } from 'react';
 import './App.css';
+import GameModeSelection from './GameModeSelection';
 import ModeSelection from './ModeSelection';
 import SpellQuiz from './SpellQuiz';
+// TODO: créer SummonerTimer plus tard
 
 function App() {
-  const [selectedMode, setSelectedMode] = useState(null);
+  const [gameMode, setGameMode] = useState(null); // 'cooldowns' ou 'summoners'
+  const [quizMode, setQuizMode] = useState(null);
+
+  const handleGameModeSelect = (mode) => {
+    setGameMode(mode);
+  };
+
+  const handleQuizModeSelect = (mode) => {
+    setQuizMode(mode);
+  };
+
+  const handleBack = () => {
+    if (quizMode) {
+      setQuizMode(null);
+    } else {
+      setGameMode(null);
+    }
+  };
 
   return (
     <div className="app">
-      {!selectedMode ? (
-        <ModeSelection onModeSelect={setSelectedMode} />
+      {!gameMode ? (
+        <GameModeSelection onModeSelect={handleGameModeSelect} />
+      ) : !quizMode ? (
+        gameMode === 'cooldowns' ? (
+          <ModeSelection onModeSelect={handleQuizModeSelect} />
+        ) : (
+          <div>Summoner Timer (coming soon)</div>
+        )
       ) : (
-        <SpellQuiz mode={selectedMode} onBack={() => setSelectedMode(null)} />
+        <SpellQuiz mode={quizMode} onBack={handleBack} />
       )}
     </div>
   );

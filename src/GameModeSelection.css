@@ -1,0 +1,64 @@
+.game-mode-selection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .game-mode-selection h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 60px;
+  }
+  
+  .mode-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .mode-card {
+    background: #0a0a0a;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+  }
+  
+  .mode-card:hover {
+    border-color: #444;
+    transform: translateY(-2px);
+  }
+  
+  .mode-card:active {
+    transform: translateY(0);
+  }
+  
+  .mode-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .mode-card h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .mode-card p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+  }

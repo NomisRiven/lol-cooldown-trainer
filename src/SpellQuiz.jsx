@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import './SpellQuiz.css';
+import { gameConfig } from './gameConfig';
+
 
 function SpellQuiz({ mode, onBack }) {
   const [allSpells, setAllSpells] = useState([]);
@@ -62,6 +64,26 @@ function SpellQuiz({ mode, onBack }) {
         return indexInChamp !== 3;
       });
     }
+    if (mode.customFilters?.famousUltimates) {
+      filtered = filtered.filter(spell => {
+        const championSpells = data.filter(s => s.champion === spell.champion);
+        const indexInChamp = championSpells.indexOf(spell);
+        return indexInChamp === 3 && gameConfig.famousUltimates.includes(spell.champion);
+      });
+    }
+    if (mode.customFilters?.bigCooldowns) {
+      filtered = filtered.filter(spell => {
+        const cooldowns = spell.cooldown_text.split('/');
+        const firstCooldown = parseFloat(cooldowns[0]);
+        return firstCooldown >= gameConfig.bigCooldownThreshold;
+      });
+    }
+    if (mode.customFilters?.metaOnly) {
+      filtered = filtered.filter(spell => 
+        gameConfig.metaChampions.includes(spell.champion)
+      );
+    }
+
 
     return filtered;
   };
