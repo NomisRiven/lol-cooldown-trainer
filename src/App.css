@@ -47,3 +47,24 @@ body {
   font-size: 18px;
   color: #666;
 }
+
+.app {
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height pour mobile */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Pour tous les conteneurs principaux */
+.quiz-container,
+.mode-selection,
+.game-mode-selection {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}

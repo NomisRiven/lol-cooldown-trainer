@@ -34,7 +34,7 @@ function App() {
         gameMode === 'cooldowns' ? (
           <ModeSelection 
             onModeSelect={handleQuizModeSelect} 
-            onBack={handleBackToMain}  {/* NOUVEAU */}
+            onBack={handleBackToMain}
           />
         ) : (
           <div className="coming-soon">
