@@ -228,7 +228,6 @@ function SpellQuiz({ mode, onBack }) {
       ? baseCooldown * (100 / (100 + currentCDR))
       : baseCooldown;
     
-    // Même arrondi que generateChoices
     let correctAnswer;
     if (actualCooldown < 1) {
       correctAnswer = Math.round(actualCooldown * 4) / 4;
@@ -245,6 +244,11 @@ function SpellQuiz({ mode, onBack }) {
       setScore(score + 1);
       setStreak(streak + 1);
       
+      // Vibration légère pour correct
+      if ('vibrate' in navigator) {
+        navigator.vibrate(50);
+      }
+      
       setTimeout(() => {
         setFeedback('');
         setUserAnswer('');
@@ -258,7 +262,6 @@ function SpellQuiz({ mode, onBack }) {
             const nextLevel = currentLevel + 1;
             setCurrentLevel(nextLevel);
             
-            // Générer nouveau CDR pour chaque niveau
             let newCdr = 0;
             if (mode.cdrMode === 'random') {
               const possibleCDR = [0, 10, 20, 30, 40, 50];
@@ -272,18 +275,27 @@ function SpellQuiz({ mode, onBack }) {
     } else {
       setFeedback('✗');
       setStreak(0);
-      setShakeScreen(true);  // NOUVEAU
-      if (navigator.vibrate) {
-        navigator.vibrate([100, 50, 100]); // Vibration pattern: vibrer 100ms, pause 50ms, vibrer 100ms
+      setShakeScreen(true);
+      
+      // Vibration pour wrong - Version plus simple et plus forte
+      if ('vibrate' in navigator) {
+        try {
+          navigator.vibrate(200); // Une seule vibration de 200ms
+          console.log('Vibration triggered!');
+        } catch (e) {
+          console.log('Vibration failed:', e);
+        }
+      } else {
+        console.log('Vibration not supported');
       }
       
       setTimeout(() => {
         setFeedback('');
-        setShakeScreen(false);  // NOUVEAU
+        setShakeScreen(false);
       }, 600);
     }
   };
-
+  
   if (!currentSpell) return <div className="loading">Loading...</div>;
 
   return (
