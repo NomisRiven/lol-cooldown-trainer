@@ -1,11 +1,14 @@
 .game-mode-selection {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-  }
+  min-height: 100vh;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; /* CENTRAGE HORIZONTAL AUTO */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
   .game-mode-selection h1 {
     font-family: Impact, 'Arial Black', sans-serif;

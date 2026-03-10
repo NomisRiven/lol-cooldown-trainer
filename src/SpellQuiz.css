@@ -1,12 +1,11 @@
 .quiz {
   min-height: 100vh;
-  min-height: 100dvh;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 500px;
-  margin: 0 auto;
-  /* ENLÈVE justify-content: center */
+  margin: 0 auto; /* CENTRAGE HORIZONTAL AUTO */
 }
 
 @media (min-height: 700px) {

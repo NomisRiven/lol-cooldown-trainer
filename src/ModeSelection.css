@@ -1,14 +1,10 @@
 .mode-selection {
   position: relative;
   min-height: 100vh;
-  min-height: 100dvh;
   padding: 80px 20px 40px;
+  width: 100%;
   max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  /* ENLÈVE justify-content: center - ça cause le problème */
-  overflow-y: auto; /* Permet le scroll */
+  margin: 0 auto; /* CENTRAGE HORIZONTAL AUTO */
 }
   
 .mode-selection h1 {
