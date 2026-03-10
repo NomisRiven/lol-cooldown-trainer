@@ -4,7 +4,7 @@ import './ModeSelection.css';
 import { gameConfig } from './gameConfig';
 
 
-function ModeSelection({ onModeSelect }) {
+function ModeSelection({ onModeSelect, onBack }) {
   const [selectedRoles, setSelectedRoles] = useState([]);
   const [spellType, setSpellType] = useState('all');
   const [learningMode, setLearningMode] = useState('all-levels');
