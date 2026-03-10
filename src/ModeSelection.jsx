@@ -71,6 +71,7 @@ if (championRoles) {
 
   return (
     <div className="mode-selection">
+      <button className="back-btn-top" onClick={onBack}>← Back</button>
       <h1>Cooldown Trainer</h1>
 
       <div className="filter-section">
