@@ -50,13 +50,10 @@ body {
 .app {
   min-height: 100vh;
   min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
-  justify-content: center; /* Centrer le contenu */
-  align-items: center; /* Centrer horizontalement */
+  /* ENLÈVE justify-content et align-items center */
 }
 /* Pour tous les conteneurs principaux */
 .quiz-container,

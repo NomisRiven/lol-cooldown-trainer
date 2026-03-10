@@ -1,19 +1,25 @@
 .quiz {
   min-height: 100vh;
-  min-height: 100dvh; /* Dynamic viewport pour mobile */
+  min-height: 100dvh;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrer verticalement */
   max-width: 500px;
   margin: 0 auto;
+  /* ENLÈVE justify-content: center */
+}
+
+@media (min-height: 700px) {
+  .quiz {
+    justify-content: center;
+  }
 }
 
 .quiz-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px; /* Réduit de 60px */
 }
 
 .back-btn {
@@ -52,7 +58,7 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  margin-bottom: 60px;
+  margin-bottom: 40px; /* Réduit de 60px */
 }
 
 .cdr-info {

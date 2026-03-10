@@ -1,27 +1,28 @@
 .mode-selection {
   position: relative;
   min-height: 100vh;
-  min-height: 100dvh; /* Dynamic viewport pour mobile */
-  padding: 80px 20px 40px; /* Plus de padding en haut pour le bouton */
+  min-height: 100dvh;
+  padding: 80px 20px 40px;
   max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrer verticalement */
+  /* ENLÈVE justify-content: center - ça cause le problème */
+  overflow-y: auto; /* Permet le scroll */
 }
   
 .mode-selection h1 {
   font-family: Impact, 'Arial Black', sans-serif;
   font-size: 32px;
   font-weight: 900;
-  margin-bottom: 50px;
+  margin-bottom: 30px; /* Réduit de 50px */
   text-align: center;
   letter-spacing: 2px;
 }
-  
-  .filter-section {
-    margin-bottom: 40px;
-  }
+
+.filter-section {
+  margin-bottom: 30px; /* Réduit de 40px */
+}
   
   .filter-section h2 {
     font-size: 14px;

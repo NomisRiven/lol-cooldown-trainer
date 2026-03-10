@@ -273,6 +273,9 @@ function SpellQuiz({ mode, onBack }) {
       setFeedback('✗');
       setStreak(0);
       setShakeScreen(true);  // NOUVEAU
+      if (navigator.vibrate) {
+        navigator.vibrate([100, 50, 100]); // Vibration pattern: vibrer 100ms, pause 50ms, vibrer 100ms
+      }
       
       setTimeout(() => {
         setFeedback('');
