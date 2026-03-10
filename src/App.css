@@ -13,3 +13,37 @@ body {
 .app {
   min-height: 100vh;
 }
+
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.coming-soon .back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: 1px solid #333;
+  color: #666;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.coming-soon .back-btn:active {
+  background: #111;
+  color: #fff;
+}
+
+.coming-soon p {
+  font-size: 18px;
+  color: #666;
+}

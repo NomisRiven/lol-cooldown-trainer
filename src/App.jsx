@@ -6,7 +6,7 @@ import SpellQuiz from './SpellQuiz';
 // TODO: créer SummonerTimer plus tard
 
 function App() {
-  const [gameMode, setGameMode] = useState(null); // 'cooldowns' ou 'summoners'
+  const [gameMode, setGameMode] = useState(null);
   const [quizMode, setQuizMode] = useState(null);
 
   const handleGameModeSelect = (mode) => {
@@ -17,12 +17,13 @@ function App() {
     setQuizMode(mode);
   };
 
-  const handleBack = () => {
-    if (quizMode) {
-      setQuizMode(null);
-    } else {
-      setGameMode(null);
-    }
+  const handleBackToGameMode = () => {
+    setQuizMode(null);
+  };
+
+  const handleBackToMain = () => {
+    setGameMode(null);
+    setQuizMode(null);
   };
 
   return (
@@ -31,12 +32,18 @@ function App() {
         <GameModeSelection onModeSelect={handleGameModeSelect} />
       ) : !quizMode ? (
         gameMode === 'cooldowns' ? (
-          <ModeSelection onModeSelect={handleQuizModeSelect} />
+          <ModeSelection 
+            onModeSelect={handleQuizModeSelect} 
+            onBack={handleBackToMain}  {/* NOUVEAU */}
+          />
         ) : (
-          <div>Summoner Timer (coming soon)</div>
+          <div className="coming-soon">
+            <button className="back-btn" onClick={handleBackToMain}>←</button>
+            <p>Summoner Timer (coming soon)</p>
+          </div>
         )
       ) : (
-        <SpellQuiz mode={quizMode} onBack={handleBack} />
+        <SpellQuiz mode={quizMode} onBack={handleBackToGameMode} />
       )}
     </div>
   );

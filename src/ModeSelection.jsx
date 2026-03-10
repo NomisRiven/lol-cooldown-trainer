@@ -63,6 +63,7 @@ if (championRoles) {
   if (loading) {
     return (
       <div className="mode-selection">
+            <button className="back-btn-top" onClick={onBack}>← Back</button>  {/* NOUVEAU */}
         <div className="loading-text">Loading champion data...</div>
       </div>
     );

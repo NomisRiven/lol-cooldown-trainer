@@ -124,3 +124,26 @@
   .filter-toggle:active {
     transform: scale(0.98);
   }
+
+  .back-btn-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: 1px solid #333;
+    color: #666;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .back-btn-top:hover {
+    color: #fff;
+    border-color: #666;
+  }
+  
+  .back-btn-top:active {
+    transform: scale(0.95);
+  }
