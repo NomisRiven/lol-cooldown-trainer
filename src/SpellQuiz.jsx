@@ -326,7 +326,17 @@ function SpellQuiz({ mode, onBack }) {
           </div>
         </>
       )}
-
+      <div className="choices">
+        {choices.map((choice, i) => (
+          <button 
+            key={i}
+            className="choice"
+            onClick={() => checkAnswer(choice)}
+          >
+            {choice}s
+          </button>
+        ))}
+      </div>
       <input 
         className="input"
         type="number"
