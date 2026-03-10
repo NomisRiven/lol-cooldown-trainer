@@ -1,13 +1,12 @@
 import { useState } from 'react';
-import { useChampionRoles } from './useChampionRoles';
+import { useChampionData } from './useChampionData'; // CHANGE ICI
 import './ModeSelection.css';
 import { gameConfig } from './gameConfig';
-
 
 function ModeSelection({ onModeSelect, onBack }) {
   const [selectedRoles, setSelectedRoles] = useState([]);
   const [spellType, setSpellType] = useState('all');
-  const [learningMode, setLearningMode] = useState('all-levels');
+  const [learningMode, setLearningMode] = useState('single-level'); // CHANGE: par défaut sur Random Level
   const [cdrMode, setCdrMode] = useState('none');
   const [customFilters, setCustomFilters] = useState({
     famousUltimates: false,
@@ -15,30 +14,15 @@ function ModeSelection({ onModeSelect, onBack }) {
     metaOnly: false
   });
   
-  const { championRoles, loading } = useChampionRoles();
-  // Ajoute ça juste après le useChampionRoles()
-console.log('Champion Roles:', championRoles);
-console.log('Loading:', loading);
+  const { championData, loading } = useChampionData(); // CHANGE ICI
 
-// Et pour voir les champions par rôle, ajoute ça aussi
-if (championRoles) {
-  console.log('Top champions:', Object.entries(championRoles)
-    .filter(([champ, roles]) => roles.includes('top'))
-    .map(([champ]) => champ)
-  );
-  
-  console.log('Jungle champions:', Object.entries(championRoles)
-    .filter(([champ, roles]) => roles.includes('jungle'))
-    .map(([champ]) => champ)
-  );
-}
-
+  // Mapping des rôles UI -> fichier JSON
   const roles = [
-    { id: 'top', name: 'Top' },
-    { id: 'jungle', name: 'Jungle' },
-    { id: 'middle', name: 'Mid' },
-    { id: 'bottom', name: 'ADC' },
-    { id: 'utility', name: 'Support' }
+    { id: 'Top', name: 'Top' },
+    { id: 'Jgl', name: 'Jungle' },
+    { id: 'Mid', name: 'Mid' },
+    { id: 'ADC', name: 'ADC' },
+    { id: 'Sup', name: 'Support' }
   ];
 
   const toggleRole = (roleId) => {
@@ -56,14 +40,14 @@ if (championRoles) {
       learningMode,
       cdrMode,
       customFilters,
-      championRoles
+      championData // Passer les données de champion
     });
   };
 
   if (loading) {
     return (
       <div className="mode-selection">
-            <button className="back-btn-top" onClick={onBack}>← Back</button>  {/* NOUVEAU */}
+        <button className="back-btn-top" onClick={onBack}>← Back</button>
         <div className="loading-text">Loading champion data...</div>
       </div>
     );
@@ -113,47 +97,49 @@ if (championRoles) {
           </button>
         </div>
       </div>
-          <div className="filter-section">
-      <h2>Custom Filters</h2>
-      <div className="toggle-filters">
-        <button
-          className={`filter-toggle ${customFilters.famousUltimates ? 'active' : ''}`}
-          onClick={() => setCustomFilters(prev => ({
-            ...prev,
-            famousUltimates: !prev.famousUltimates
-          }))}
-        >
-          Famous Ultimates ⭐
-        </button>
-        <button
-          className={`filter-toggle ${customFilters.bigCooldowns ? 'active' : ''}`}
-          onClick={() => setCustomFilters(prev => ({
-            ...prev,
-            bigCooldowns: !prev.bigCooldowns
-          }))}
-        >
-          Big Cooldowns (50s+) 🕐
-        </button>
-        <button
-          className={`filter-toggle ${customFilters.metaOnly ? 'active' : ''}`}
-          onClick={() => setCustomFilters(prev => ({
-            ...prev,
-            metaOnly: !prev.metaOnly
-          }))}
-        >
-          Meta Champions 🔥
-        </button>
+
+      <div className="filter-section">
+        <h2>Custom Filters</h2>
+        <div className="toggle-filters">
+          <button
+            className={`filter-toggle ${customFilters.famousUltimates ? 'active' : ''}`}
+            onClick={() => setCustomFilters(prev => ({
+              ...prev,
+              famousUltimates: !prev.famousUltimates
+            }))}
+          >
+            Famous Ultimates ⭐
+          </button>
+          <button
+            className={`filter-toggle ${customFilters.bigCooldowns ? 'active' : ''}`}
+            onClick={() => setCustomFilters(prev => ({
+              ...prev,
+              bigCooldowns: !prev.bigCooldowns
+            }))}
+          >
+            Big Cooldowns (50s+) 🕐
+          </button>
+          <button
+            className={`filter-toggle ${customFilters.metaOnly ? 'active' : ''}`}
+            onClick={() => setCustomFilters(prev => ({
+              ...prev,
+              metaOnly: !prev.metaOnly
+            }))}
+          >
+            Meta Champions 🔥
+          </button>
+        </div>
+        {customFilters.famousUltimates && (
+          <p className="hint">Only famous game-changing ultimates</p>
+        )}
+        {customFilters.bigCooldowns && (
+          <p className="hint">Cooldowns above {gameConfig.bigCooldownThreshold} seconds</p>
+        )}
+        {customFilters.metaOnly && (
+          <p className="hint">Current patch meta champions only</p>
+        )}
       </div>
-      {customFilters.famousUltimates && (
-        <p className="hint">Only famous game-changing ultimates</p>
-      )}
-      {customFilters.bigCooldowns && (
-        <p className="hint">Cooldowns above {gameConfig.bigCooldownThreshold} seconds</p>
-      )}
-      {customFilters.metaOnly && (
-        <p className="hint">Current patch meta champions only</p>
-      )}
-    </div>
+
       <div className="filter-section">
         <h2>Learning Mode</h2>
         <div className="option-grid">

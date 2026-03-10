@@ -46,12 +46,13 @@ function SpellQuiz({ mode, onBack }) {
 
   const filterSpells = (data) => {
     let filtered = data;
-
-    // Filtre par rôle (dynamique depuis Community Dragon)
-    if (mode.roles && mode.roles.length > 0 && mode.championRoles) {
+  
+    // Filtre par rôle (depuis champion-data.json)
+    if (mode.roles && mode.roles.length > 0 && mode.championData) {
       const allowedChampions = new Set();
       
-      Object.entries(mode.championRoles).forEach(([champion, roles]) => {
+      Object.entries(mode.championData).forEach(([champion, roles]) => {
+        // Si le champion a au moins un des rôles sélectionnés
         if (mode.roles.some(selectedRole => roles.includes(selectedRole))) {
           allowedChampions.add(champion);
         }
@@ -59,7 +60,7 @@ function SpellQuiz({ mode, onBack }) {
       
       filtered = filtered.filter(spell => allowedChampions.has(spell.champion));
     }
-
+  
     // Filtre par type de spell
     if (mode.spellType === 'ultimates') {
       filtered = filtered.filter((spell) => {
@@ -74,6 +75,10 @@ function SpellQuiz({ mode, onBack }) {
         return indexInChamp !== 3;
       });
     }
+  
+    // Custom Filters - CUMULABLES avec les rôles
+    
+    // Filtre Famous Ultimates (doit être ult ET famous ET dans les rôles si sélectionnés)
     if (mode.customFilters?.famousUltimates) {
       filtered = filtered.filter(spell => {
         const championSpells = data.filter(s => s.champion === spell.champion);
@@ -81,6 +86,8 @@ function SpellQuiz({ mode, onBack }) {
         return indexInChamp === 3 && gameConfig.famousUltimates.includes(spell.champion);
       });
     }
+  
+    // Filtre Big Cooldowns (cumule avec rôles)
     if (mode.customFilters?.bigCooldowns) {
       filtered = filtered.filter(spell => {
         const cooldowns = spell.cooldown_text.split('/');
@@ -88,13 +95,14 @@ function SpellQuiz({ mode, onBack }) {
         return firstCooldown >= gameConfig.bigCooldownThreshold;
       });
     }
+  
+    // Filtre Meta Champions (cumule avec rôles)
     if (mode.customFilters?.metaOnly) {
       filtered = filtered.filter(spell => 
         gameConfig.metaChampions.includes(spell.champion)
       );
     }
-
-
+  
     return filtered;
   };
 

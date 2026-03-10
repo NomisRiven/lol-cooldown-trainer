@@ -1,29 +1,28 @@
 import { useState, useEffect } from 'react';
 
-export function useChampionRoles() {
-  const [championRoles, setChampionRoles] = useState(null);
+export function useChampionData() {
+  const [championData, setChampionData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('/champion-data.json')
       .then(res => res.json())
       .then(data => {
-        // Construire un objet { championName: [roles] }
+        // Créer un mapping champion -> roles
         const rolesMap = {};
         
         data.forEach(champ => {
-          rolesMap[champ.name] = champ.roles;
+          rolesMap[champ.name] = champ.roles || [];
         });
         
-        console.log('Champion roles loaded:', rolesMap);
-        setChampionRoles(rolesMap);
+        setChampionData(rolesMap);
         setLoading(false);
       })
       .catch(err => {
-        console.error('Failed to load champion roles:', err);
+        console.error('Failed to load champion data:', err);
         setLoading(false);
       });
   }, []);
 
-  return { championRoles, loading };
+  return { championData, loading };
 }
