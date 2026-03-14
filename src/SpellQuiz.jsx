@@ -17,6 +17,8 @@ function SpellQuiz({ mode, onBack }) {
   const [currentCDR, setCurrentCDR] = useState(0);
   const [shakeScreen, setShakeScreen] = useState(false);
   const [cooldownRevealed, setCooldownRevealed] = useState(false);
+  const [waitingForNextQuestion, setWaitingForNextQuestion] = useState(false);
+
 
 
 
@@ -262,35 +264,14 @@ function SpellQuiz({ mode, onBack }) {
       setFeedback('✓');
       setScore(score + 1);
       setStreak(streak + 1);
+      setWaitingForNextQuestion(true); // NOUVEAU - attendre le clic
       
       if ('vibrate' in navigator) {
         navigator.vibrate(50);
       }
       
-      setTimeout(() => {
-        setFeedback('');
-        setUserAnswer('');
-        
-        if (mode.learningMode === 'single-level') {
-          loadNewSpell(filteredSpells);
-        } else {
-          if (currentLevel >= cooldowns.length - 1) {
-            loadNewSpell(filteredSpells);
-          } else {
-            const nextLevel = currentLevel + 1;
-            setCurrentLevel(nextLevel);
-            
-            let newCdr = 0;
-            if (mode.cdrMode === 'random') {
-              const possibleCDR = [0, 10, 20, 30, 40, 50];
-              newCdr = possibleCDR[Math.floor(Math.random() * possibleCDR.length)];
-            }
-            setCurrentCDR(newCdr);
-            setCooldownRevealed(false); // RESET on next level
-            generateChoices(currentSpell, nextLevel, newCdr);
-          }
-        }
-      }, 600);
+      // ENLÈVE le setTimeout - on ne passe plus automatiquement
+      
     } else {
       setFeedback('✗');
       setStreak(0);
@@ -307,6 +288,36 @@ function SpellQuiz({ mode, onBack }) {
     }
   };
   
+  const handleNextQuestion = () => {
+    if (!waitingForNextQuestion) return;
+    
+    const cooldowns = currentSpell.cooldown_text.split('/');
+    
+    setFeedback('');
+    setUserAnswer('');
+    setWaitingForNextQuestion(false);
+    
+    if (mode.learningMode === 'single-level') {
+      loadNewSpell(filteredSpells);
+    } else {
+      if (currentLevel >= cooldowns.length - 1) {
+        loadNewSpell(filteredSpells);
+      } else {
+        const nextLevel = currentLevel + 1;
+        setCurrentLevel(nextLevel);
+        
+        let newCdr = 0;
+        if (mode.cdrMode === 'random') {
+          const possibleCDR = [0, 10, 20, 30, 40, 50];
+          newCdr = possibleCDR[Math.floor(Math.random() * possibleCDR.length)];
+        }
+        setCurrentCDR(newCdr);
+        setCooldownRevealed(false);
+        generateChoices(currentSpell, nextLevel, newCdr);
+      }
+    }
+  };
+
   if (!currentSpell) return <div className="loading">Loading...</div>;
 
   return (
@@ -347,29 +358,35 @@ function SpellQuiz({ mode, onBack }) {
       </div>
   
       {feedback && (
+  <>
+    <div className="feedback-overlay" onClick={handleNextQuestion}></div>
+    <div 
+      className={`feedback ${feedback === '✓' ? 'correct' : 'wrong'}`}
+      onClick={handleNextQuestion}
+      style={waitingForNextQuestion ? { cursor: 'pointer' } : {}}
+    >
+      {feedback === '✓' ? (
         <>
-          <div className="feedback-overlay"></div>
-          <div className={`feedback ${feedback === '✓' ? 'correct' : 'wrong'}`}>
-            {feedback === '✓' ? (
-              <>
-                <div className="feedback-text">CORRECT</div>
-                {/* Show bonus info when correct */}
-                {currentCDR > 0 && (
-                  <div className="bonus-info">
-                    Base CD: {currentSpell.cooldown_text.split('/')[currentLevel]}s
-                  </div>
-                )}
-                <div className="all-levels-info">
-                  {currentSpell.cooldown_text}
-                </div>
-                <div className="confetti"></div>
-              </>
-            ) : (
-              <div className="feedback-text">WRONG</div>
-            )}
+          <div className="feedback-text">CORRECT</div>
+          {currentCDR > 0 && (
+            <div className="bonus-info">
+              Base CD: {currentSpell.cooldown_text.split('/')[currentLevel]}s
+            </div>
+          )}
+          <div className="all-levels-info">
+            {currentSpell.cooldown_text}
           </div>
+          {waitingForNextQuestion && (
+            <div className="tap-to-continue">Tap to continue</div>
+          )}
+          <div className="confetti"></div>
         </>
+      ) : (
+        <div className="feedback-text">WRONG</div>
       )}
+    </div>
+  </>
+)}
   
       <div className="choices">
         {choices.map((choice, i) => (

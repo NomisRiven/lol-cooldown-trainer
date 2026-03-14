@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto; /* CENTRAGE HORIZONTAL AUTO */
+  margin: 0 auto;
 }
 
 @media (min-height: 700px) {
@@ -14,45 +14,17 @@
   }
 }
 
+.quiz.shake {
+  animation: screenShake 0.6s ease;
+}
+
 .quiz-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px; /* Réduit de 60px */
-}
-/* Blurred hint - same as summoner timer */
-.base-cooldown-hint {
-  font-size: 13px;
-  color: #666;
-  margin-top: 8px;
-  cursor: pointer;
-  transition: all 0.3s;
-  user-select: none;
+  margin-bottom: 40px;
 }
 
-.base-cooldown-hint.blurred {
-  filter: blur(6px);
-  color: #444;
-}
-
-.base-cooldown-hint.blurred:hover {
-  filter: blur(4px);
-}
-
-/* Bonus info shown after correct answer */
-.bonus-info {
-  font-size: 16px;
-  color: #4CAF50;
-  margin-top: 10px;
-  font-weight: 500;
-}
-
-.all-levels-info {
-  font-size: 14px;
-  color: #8BC34A;
-  margin-top: 5px;
-  font-family: 'Courier New', monospace;
-}
 .back-btn {
   background: none;
   border: 1px solid #333;
@@ -89,14 +61,7 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  margin-bottom: 40px; /* Réduit de 60px */
-}
-
-.cdr-info {
-  font-size: 14px;
-  color: #4CAF50;
-  margin-top: 4px;
-  font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .spell-img {
@@ -131,7 +96,32 @@
   color: #888;
 }
 
-/* Overlay flou en arrière-plan */
+.base-cooldown-hint {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.base-cooldown-hint.blurred {
+  filter: blur(6px);
+  color: #444;
+}
+
+.base-cooldown-hint.blurred:hover {
+  filter: blur(4px);
+}
+
+.cdr-info {
+  font-size: 14px;
+  color: #4CAF50;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Feedback system */
 .feedback-overlay {
   position: fixed;
   top: 0;
@@ -142,14 +132,9 @@
   background: rgba(0, 0, 0, 0.3);
   z-index: 98;
   animation: fadeIn 0.2s ease;
+  cursor: pointer;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Container du feedback */
 .feedback {
   position: fixed;
   top: 50%;
@@ -159,7 +144,6 @@
   pointer-events: none;
 }
 
-/* Texte du feedback */
 .feedback-text {
   font-family: Impact, 'Arial Black', sans-serif;
   font-size: 80px;
@@ -168,81 +152,40 @@
   text-shadow: 0 0 20px currentColor;
 }
 
-/* Feedback correct (vert) */
 .feedback.correct .feedback-text {
   color: #4CAF50;
   animation: popCorrect 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@keyframes popCorrect {
-  0% { 
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% { 
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% { 
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Feedback incorrect (rouge + shake) */
 .feedback.wrong .feedback-text {
   color: #f44336;
   animation: shake 0.6s ease;
 }
 
-@keyframes shake {
-  0%, 100% { 
-    transform: translateX(0);
-    opacity: 0;
-  }
-  10% { 
-    transform: translateX(-15px);
-    opacity: 1;
-  }
-  20% { 
-    transform: translateX(15px);
-  }
-  30% { 
-    transform: translateX(-15px);
-  }
-  40% { 
-    transform: translateX(15px);
-  }
-  50% { 
-    transform: translateX(-10px);
-  }
-  60% { 
-    transform: translateX(10px);
-  }
-  70% { 
-    transform: translateX(-5px);
-  }
-  80% { 
-    transform: translateX(5px);
-  }
-  90% { 
-    transform: translateX(0);
-    opacity: 1;
-  }
+.bonus-info {
+  font-size: 16px;
+  color: #4CAF50;
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
 }
 
-/* Shake de tout l'écran pour mauvaise réponse */
-.feedback.wrong ~ .quiz {
-  animation: screenShake 0.6s ease;
+.all-levels-info {
+  font-size: 14px;
+  color: #8BC34A;
+  margin-top: 5px;
+  font-family: 'Courier New', monospace;
+  text-align: center;
 }
 
-@keyframes screenShake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-  20%, 40%, 60%, 80% { transform: translateX(5px); }
+.tap-to-continue {
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+  animation: pulse 1.5s ease-in-out infinite;
 }
 
-/* Confettis pour bonne réponse */
+/* Confettis */
 .confetti {
   position: absolute;
   top: 50%;
@@ -274,32 +217,7 @@
   animation-delay: 0.2s;
 }
 
-@keyframes confettiFall {
-  0% {
-    transform: translateY(-100px) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(200px) rotate(720deg);
-    opacity: 0;
-  }
-}
-
-@keyframes pop {
-  0% { 
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  50% { 
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  100% { 
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-}
-
+/* Choices and input */
 .choices {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -357,6 +275,81 @@
   color: #666;
 }
 
-.quiz.shake {
-  animation: screenShake 0.6s ease;
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popCorrect {
+  0% { 
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { 
+    transform: translateX(0);
+    opacity: 0;
+  }
+  10% { 
+    transform: translateX(-15px);
+    opacity: 1;
+  }
+  20% { 
+    transform: translateX(15px);
+  }
+  30% { 
+    transform: translateX(-15px);
+  }
+  40% { 
+    transform: translateX(15px);
+  }
+  50% { 
+    transform: translateX(-10px);
+  }
+  60% { 
+    transform: translateX(10px);
+  }
+  70% { 
+    transform: translateX(-5px);
+  }
+  80% { 
+    transform: translateX(5px);
+  }
+  90% { 
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes screenShake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px) rotate(720deg);
+    opacity: 0;
+  }
 }
