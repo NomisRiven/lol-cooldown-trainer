@@ -16,6 +16,8 @@ function SpellQuiz({ mode, onBack }) {
   const [latestVersion, setLatestVersion] = useState('16.5.1');
   const [currentCDR, setCurrentCDR] = useState(0);
   const [shakeScreen, setShakeScreen] = useState(false);
+  const [cooldownRevealed, setCooldownRevealed] = useState(false);
+
 
 
   useEffect(() => {
@@ -135,6 +137,7 @@ function SpellQuiz({ mode, onBack }) {
     setCurrentSpell(randomSpell);
     setCurrentLevel(level);
     setCurrentCDR(cdr);
+    setCooldownRevealed(false); // RESET REVEAL STATE
     generateChoices(randomSpell, level, cdr);
   };
 
@@ -260,7 +263,6 @@ function SpellQuiz({ mode, onBack }) {
       setScore(score + 1);
       setStreak(streak + 1);
       
-      // Vibration légère pour correct
       if ('vibrate' in navigator) {
         navigator.vibrate(50);
       }
@@ -284,6 +286,7 @@ function SpellQuiz({ mode, onBack }) {
               newCdr = possibleCDR[Math.floor(Math.random() * possibleCDR.length)];
             }
             setCurrentCDR(newCdr);
+            setCooldownRevealed(false); // RESET on next level
             generateChoices(currentSpell, nextLevel, newCdr);
           }
         }
@@ -293,16 +296,8 @@ function SpellQuiz({ mode, onBack }) {
       setStreak(0);
       setShakeScreen(true);
       
-      // Vibration pour wrong - Version plus simple et plus forte
       if ('vibrate' in navigator) {
-        try {
-          navigator.vibrate(200); // Une seule vibration de 200ms
-          console.log('Vibration triggered!');
-        } catch (e) {
-          console.log('Vibration failed:', e);
-        }
-      } else {
-        console.log('Vibration not supported');
+        navigator.vibrate(200);
       }
       
       setTimeout(() => {
@@ -323,7 +318,7 @@ function SpellQuiz({ mode, onBack }) {
           <span className="streak">{streak > 0 ? `🔥 ${streak}` : ''}</span>
         </div>
       </div>
-
+  
       <div className="spell-info">
         <img 
           src={`http://ddragon.leagueoflegends.com/cdn/${latestVersion}/img/spell/${currentSpell.spell_id}.png`}
@@ -336,12 +331,21 @@ function SpellQuiz({ mode, onBack }) {
             {currentSpell.spell_name} <span className="spell-key">({getSpellKey()})</span>
           </div>
           <div className="level">Level {currentLevel + 1}</div>
+          
+          {/* Blurred hint - click to reveal */}
+          <div 
+            className={`base-cooldown-hint ${!cooldownRevealed ? 'blurred' : ''}`}
+            onClick={() => setCooldownRevealed(true)}
+          >
+            All levels: {currentSpell.cooldown_text}
+          </div>
+          
           {currentCDR > 0 && (
             <div className="cdr-info">{currentCDR} Ability Haste</div>
           )}
         </div>
       </div>
-
+  
       {feedback && (
         <>
           <div className="feedback-overlay"></div>
@@ -349,6 +353,15 @@ function SpellQuiz({ mode, onBack }) {
             {feedback === '✓' ? (
               <>
                 <div className="feedback-text">CORRECT</div>
+                {/* Show bonus info when correct */}
+                {currentCDR > 0 && (
+                  <div className="bonus-info">
+                    Base CD: {currentSpell.cooldown_text.split('/')[currentLevel]}s
+                  </div>
+                )}
+                <div className="all-levels-info">
+                  {currentSpell.cooldown_text}
+                </div>
                 <div className="confetti"></div>
               </>
             ) : (
@@ -357,6 +370,7 @@ function SpellQuiz({ mode, onBack }) {
           </div>
         </>
       )}
+  
       <div className="choices">
         {choices.map((choice, i) => (
           <button 
@@ -368,6 +382,7 @@ function SpellQuiz({ mode, onBack }) {
           </button>
         ))}
       </div>
+  
       <input 
         className="input"
         type="number"

@@ -20,7 +20,39 @@
   align-items: center;
   margin-bottom: 40px; /* Réduit de 60px */
 }
+/* Blurred hint - same as summoner timer */
+.base-cooldown-hint {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+}
 
+.base-cooldown-hint.blurred {
+  filter: blur(6px);
+  color: #444;
+}
+
+.base-cooldown-hint.blurred:hover {
+  filter: blur(4px);
+}
+
+/* Bonus info shown after correct answer */
+.bonus-info {
+  font-size: 16px;
+  color: #4CAF50;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.all-levels-info {
+  font-size: 14px;
+  color: #8BC34A;
+  margin-top: 5px;
+  font-family: 'Courier New', monospace;
+}
 .back-btn {
   background: none;
   border: 1px solid #333;
