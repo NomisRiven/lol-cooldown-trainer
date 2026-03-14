@@ -345,7 +345,7 @@
     "champion": "Bard",
     "spell_name": "Caretaker's Shrine",
     "spell_id": "BardW",
-    "cooldown_text": "0"
+    "cooldown_text": "18"
   },
   {
     "champion": "Bard",
@@ -489,7 +489,7 @@
     "champion": "Caitlyn",
     "spell_name": "Yordle Snap Trap",
     "spell_id": "CaitlynW",
-    "cooldown_text": "0.5"
+    "cooldown_text": "26/22/18/14/10"
   },
   {
     "champion": "Caitlyn",
@@ -1983,7 +1983,7 @@
     "champion": "Milio",
     "spell_name": "Warm Hugs",
     "spell_id": "MilioE",
-    "cooldown_text": "0.5"
+    "cooldown_text": "17/16/15/14/13"
   },
   {
     "champion": "Milio",
